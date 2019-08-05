@@ -1,0 +1,45 @@
+IDE
+ao abrir:
+
+eclipse
+    workspace
+    projetos
+    pacotes
+    classes
+    import
+    jar
+
+vs
+    solution
+    projetos
+    namespaces
+    classes
+    using
+    dll
+
+algumas diferenças:
+1. chaves sempre a baixo do
+2. nome de metodos, sempre a primeira letra em Maiuscula
+3. namespace = package
+4. Console.WriteLine = system.print
+5. no java, ao compilarmos temos os .class, que empacotados ficariam no jar. No c# temos os .dll que já é um pacote de classes.
+
+java
+    public
+    protected
+    private
+    default (package) - somente no pacote
+
+c#
+    public
+    protected
+    private
+    internal
+
+
+abstracao - generalizar algo
+heranca - especificar algo
+encapsulamento - definir os acessos do atributos e metodos
+polimorfismo - herdar e alterar metodos ja definidos (override)
+
+herança só são métodos e atributos. construtores nao sao herdados
