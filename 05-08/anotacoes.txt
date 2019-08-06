@@ -43,3 +43,5 @@ encapsulamento - definir os acessos do atributos e metodos
 polimorfismo - herdar e alterar metodos ja definidos (override)
 
 herança só são métodos e atributos. construtores nao sao herdados
+o construtor vazio, nao precisa ser reescrito na classe filha.
+mas, se houver um construtor com especificacao, entao temos que reescrever
