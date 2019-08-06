@@ -1,0 +1,13 @@
+inner join (ou equi join) - traz o equivalente
+cada linha do lado esquerdo, tem que ter equivalente no lado direito
+
+left join
+pega tudo da esquerda e só o equivalente do lado direito, ou seja, todos que estão no direito, mesmo os que nao tenham no lado esquerda
+
+right, invertido ao de cima
+
+full
+pega tudo de ambos os lados
+
+cross
+todos contra todos
