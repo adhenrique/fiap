@@ -1,0 +1,40 @@
+visão
+    quem queremos ser perante a socieadade.
+    Pra eu chegar la preciso fazer isso agora, mesmo que divida isso em passos
+
+swot
+    serve para tirar uma fotografia da empresa
+    nao se trata de perguntar para os executivos, mas sim ir falar diretamente com as pessoas
+    como o mercado vê a empresa, como os executivos vêem, etc...
+
+Conceitos iniciais de BI e DW:
+    warehouse: armazem de dados
+
+    oltp - te dá a informação
+        transações curtas
+        processamento de poucas linhas
+    olap - vc toma a decisão
+        processamento de massa
+
+    oltp é origem de dados para olap
+
+    estou querendo lançar um produto novo, o produto é um sorvete que nao leite.
+    qual o publico que nao pode cosumir leite?
+    qual a quantidade?
+
+    pq no online nao conseguimos tomar esse tipo de decisão?
+        pois nao temos historico
+        nem sempre temos todos os dados lá
+    
+big data contém bi, pois bi é um componente de big data
+dado estruturado versus nao estruturado
+big data - um aglomerado de dados
+bi - a organizacao dos dados
+https://canaltech.com.br/business-intelligence/A-diferenca-entre-Big-Data-e-Business-Intelligence/
+
+estruturado contem calculos pré estabelecidos (BI)
+    number: 1 a 9
+dado nao estruturado (BIG DATA)
+    conversa no whatsapp
+    pdf
+    sao dados que nao conseguimos tratar
