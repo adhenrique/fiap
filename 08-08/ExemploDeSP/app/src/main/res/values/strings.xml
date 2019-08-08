@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Exemplo de SP</string>
+    <string name="informe_o_usuario">Informe o usuario</string>
+    <string name="informe_a_senha">Informe a senha</string>
+    <string name="login">Login</string>
+    <string name="manter_conectado">Manter conectado?</string>
+    <string name="informe_os_dados_correamente">Informe os dados corretamente</string>
+    <string name="usuario_inexistente">Usuário inexistente</string>
+    <string name="senha_invalida">Senha inválida</string>
+    <string name="usuario_logado">Usuário logado com sucesso</string>
+    <string name="usuario_invalido">Login inválido</string>
+</resources>
