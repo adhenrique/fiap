@@ -1,0 +1,31 @@
+2 nacs no segundo semestre
+
+1 de estimativa
+1 de teste
+
+as nacs serão em dupla
+
+provas semestrais teremos um kit de apoio e poderemos trazer conteudo escrito em uma folha a4
+
+
+---------------
+estimávamos o tempo com o planning poker:
+    Pegávamos o backlog do produto
+    poderamos um peso de esforço de cada item
+    após, precisamos fazer o release plan (sprint)
+        o primeiro item vai para a primeira
+        se definimos somente 1 item na sprint, entao o peso de esforço desse item, define o tempo da sprin
+        logo a soma do peso de esforço dos proximos itens devem ser igual ao tempo da sprint. se passar, deve ser dividido em sprints
+
+        suponhamos que temos 3 pessoas na equipe, e nossas sprints teve 20 dias, entao multiplicamos = 60 dias de esforço
+        se o preço por profissional for 1k por dia, entao o preço do projeto é 180k
+quando arrastamos um cartao para done, guardamos quanto tempos utilizamos
+e vamos criando uma base para tirar uma média no final
+após, conseguimos fazer uma média da empresa ou seja:
+    1 ponto do pocker vale, Xhrs
+
+O peso do esforçoe é baseado em um julgamento, pois nem sempre temos histórico de desenvolvimentos anteriores
+
+geralmente, o mais barato vence. licitação é regra, sempre o mais barato
+
+estimativa paramétrica utiliza todas as caracteristicas
