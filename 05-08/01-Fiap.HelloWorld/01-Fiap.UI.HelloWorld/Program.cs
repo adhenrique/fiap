@@ -12,6 +12,7 @@ namespace _01_Fiap.UI.HelloWorld
             // exibir valor
             PessoaFisica pessoa = new PessoaFisica();
             pessoa.Nome = "Sêrgio";
+            pessoa.Status = EstadoCivil.Casado;
             Console.WriteLine(pessoa.Nome);
 
             // instanciar outra pessoa fisica
@@ -20,7 +21,8 @@ namespace _01_Fiap.UI.HelloWorld
                 Nome = "Thiag",
                 Rg = "123123",
                 Cpf = 123123123,
-                Idade = 30
+                Idade = 30,
+                Status = EstadoCivil.Namorando,
             };
 
             Console.WriteLine(pessoa2.Idade);

@@ -1,0 +1,24 @@
+O projeto continuou no do dia 05-08
+
+.net é uma plataforma que contém um grupo de linguagens:
+    c#
+    f#
+    visual basic
+
+nao esquecer que os metodos começam com letra maiuscula
+
+construtor nao é herdado.
+criamos um construtor pq é obrigatório
+
+classes abstratas é uma classe que nao pode ser instanciada
+pode implementar metodos abstratos;
+
+
+-
+só conseguimos sobrescrever um método se ele for virtual ou abstract
+
+conseguimos implementar, multiplas vezes
+nao tem herança multipla
+
+List - interface
+ArrayList - implementação da interface List

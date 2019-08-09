@@ -34,7 +34,7 @@ c#
     public
     protected
     private
-    internal
+    internal (módulo, por projeto)
 
 
 abstracao - generalizar algo
