@@ -29,3 +29,5 @@ O peso do esforçoe é baseado em um julgamento, pois nem sempre temos históric
 geralmente, o mais barato vence. licitação é regra, sempre o mais barato
 
 estimativa paramétrica utiliza todas as caracteristicas
+
+no cfb do APF, temos que colocar as possiveis tabelas (arquivos)
