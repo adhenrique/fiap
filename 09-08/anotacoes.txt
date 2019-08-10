@@ -1,0 +1,10 @@
+codable - serializa e deserializa (transforma a classe em json | transforma o json em classe)
+
+para funcoes estaticas, devemos usar class func metodo, dentro da classe
+a diferenca entre static e class, é que static nao conseguimos modificar o comportamento do método (override)
+
+guard let defini que a variavel vai continuar existindo no codigo
+if let nao
+
+em IOS existe uma thread chamada main thread. Qualque rcoisa que envolve tela, comportamento, movimentar, só ocorre nessa thread
+o iOS tem um bug, que é rodar funcoes asincronas em uma segunda thread, entao temos que usar DispatchQueue.main.async para pegar a main thread e executar a logica que precisarmos
