@@ -1,0 +1,10 @@
+No java, temos que ter a obrigacao de definir a estrutura de pastas no package
+atributos começam com _
+
+usamos virtual, para override
+usamos base = super()
+
+Interfaces, sempre começam com I (maiúsculo)
+
+classe abstrata pode ter métodos abstratos e normais.
+classe normais, nao pode ter métodos abstratos

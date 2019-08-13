@@ -1,4 +1,5 @@
-﻿using Fiap.Exercicio1.Model;
+﻿using Fiap.Exercicio1.Exceptions;
+using Fiap.Exercicio1.Model;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,36 +8,29 @@ namespace Fiap.Banco.Model
 {
     class ContaPoupanca : Conta, IContaInvestimento
     {
+        // propriedades
         public decimal Taxa { get; set; }
+        // atributos
         private decimal _rendimento;
-        public decimal Rendimento { get; set; }
 
         public ContaPoupanca() { }
         public ContaPoupanca(decimal rendimento)
         {
-            Rendimento = rendimento;
-        }
-
-        public override void Depositar(decimal valor)
-        {
-            Saldo = valor;
+            _rendimento = rendimento;
         }
 
         public override void Retirar(decimal valor)
         {
-            if (Saldo > 0)
+            if (Saldo < valor + Taxa)
             {
-                Saldo -= (valor - Taxa);
+                throw new SaldoInsuficienteException();
             }
-            else
-            {
-                throw new Exception("Retirada nao permitida. Você nao possui crédito suficiente");
-            }
+            Saldo -= (valor + Taxa);
         }
 
         public decimal CalcularRetornoInvestimento()
         {
-            return Saldo * Rendimento;
+            return Saldo * _rendimento;
         }
     }
 }
