@@ -1,0 +1,3 @@
+non equi join sempre será usado com operadores de comparação (between, >, <, >=, <=, <>)
+
+natural join os campos precisam ter o mesmo nome
