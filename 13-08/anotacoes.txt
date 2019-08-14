@@ -1,0 +1,12 @@
+os relatorios de bi antigamente, eram muito antigos.
+
+o bi consegue te dar predição.
+o bi te dá o movimento (d-1)
+
+self service bi
+
+
+botom up - os dados sao caregados nas pontas para o centro
+top down - os dados sao carregados no centro para as pontas
+
+as tabelas dimensionais são as que guardam os descritivos
