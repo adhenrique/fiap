@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Exemplo de File</string>
+    <string name="salvar">Salvar</string>
+    <string name="salvo">Salvo</string>
+</resources>
