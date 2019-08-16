@@ -1,0 +1,19 @@
+cfg é praticamente o Backlog (o que está dentro da estoria)
+
+após definirmos o CFB, precisamos reler, pois podem haver casos em que um item do CFB tenha uma dependencia como modelagem de tabelas e etc...
+
+interação função de transação = funções interativas
+
+telas ou extraidos que contenham logica para mostrar campos diferentes do que nao possue na base, ou soma de valores, etc, entao ela é uma SE
+DER pode ser uma coluna, uma variavel, etc
+
+Para definir o DER do SE, temos uma regra diferente:
+    como temos 2 transações, entao temos dados de input e output
+
+Arquivos lógicos, devemos selecionar qual arquivo ele utiliza (a entidade após a modelagem)
+
+Os tipo de registro podem ser unico formato ou tipos de registros diferentes.
+Um exemplo de unico formato:
+    cd  nome endereco
+exemplo de registros diferentes
+    impressao de impressoras termicas fiscais
