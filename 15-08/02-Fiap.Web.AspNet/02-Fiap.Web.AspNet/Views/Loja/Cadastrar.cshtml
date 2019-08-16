@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<div class="row justify-content-center">
+    <div class="col-6">
+        <h1>Cadastrar</h1>
+        <form action="/loja/cadastrar" method="post">
+            <div class="form-group">
+                <label for="nome">Nome</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereco</label>
+                <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Endereço">
+            </div>
+            <div class="form-group">
+                <label for="faturamento">Faturamento</label>
+                <input type="text" class="form-control" id="faturamento" name="faturamento" placeholder="Faturamento">
+            </div>
+            <button type="submit" class="btn btn-primary">Salvar</button>
+        </form>
+        <p>Nome: @ViewData["sergio"]</p>
+        <p>Faturamento: @ViewBag.churros</p>
+        <p>@TempData["msg"]</p>
+    </div>
+</div>
