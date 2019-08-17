@@ -13,12 +13,23 @@ class CarViewController: UIViewController {
     @IBOutlet weak var lbBrand: UILabel!
     @IBOutlet weak var lbGasType: UILabel!
     @IBOutlet weak var lbPrice: UILabel!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    var car: Car!
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? AddEditViewController {
+            vc.car = car
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        if car != nil {
+            lbBrand.text = car.brand
+            lbGasType.text = car.gas
+            lbPrice.text = "R$ \(car.price)"
+            title = car.brand
+        }
     }
 }

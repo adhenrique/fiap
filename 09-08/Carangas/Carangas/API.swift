@@ -52,4 +52,44 @@ class API {
     class func errorMessage() {
         print("Deu merda!")
     }
+    
+    class func createCar(_ car: Car, onComplete: @escaping (Bool)->Void) {
+        restOperation(car: car, httpMethod: "POST", onComplete: onComplete)
+    }
+    
+    class func updateCar(_ car: Car, onComplete: @escaping (Bool)->Void) {
+        restOperation(car: car, httpMethod: "PUT", onComplete: onComplete)
+    }
+    
+    class func deleteCar(_ car: Car, onComplete: @escaping (Bool)->Void) {
+        restOperation(car: car, httpMethod: "DELETE", onComplete: onComplete)
+    }
+    
+    private class func restOperation(car: Car, httpMethod: String, onComplete: @escaping (Bool)->Void) {
+        let urlString = path + "/" + car._id
+        guard let url = URL(string: urlString) else {
+            onComplete(false)
+            return
+        }
+        
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = httpMethod
+        urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        do {
+            urlRequest.httpBody = try JSONEncoder().encode(car)
+        } catch {
+            onComplete(false)
+            return
+        }
+        
+        let dataTask = session.dataTask(with: urlRequest) { (data, response, error) in
+            if data != nil {
+                onComplete(true)
+            } else {
+                onComplete(false)
+            }
+        }
+        dataTask.resume()
+    }
 }

@@ -12,6 +12,14 @@ class CarsTableViewController: UITableViewController {
     
     var cars: [Car] = []
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? CarViewController {
+            if let row = tableView.indexPathForSelectedRow?.row {
+                vc.car = cars[row]
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

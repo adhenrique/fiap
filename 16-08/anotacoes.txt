@@ -1,0 +1,5 @@
+usamos _ (underline) para nao exportar os parametros para fora
+ou seja, quando definimos sum(a: Int, b: Int), teriamos que chamar sum(a: 1, b: 2)
+entao, se fizermos sum(_ a: Int, _ b: Int), poderiamos utilizar sum(1,2)
+
+usamos @escaping faz com que o parametro ou callback nao morra, ao fim do metodo
