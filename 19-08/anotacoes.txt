@@ -1,0 +1,5 @@
+o que fazer quando para abrirmos uma pagina basica?
+criar um controller, e atraves dele criar uma view.
+
+controller sempre herda de Controller (class ClienteController : Controller)
+

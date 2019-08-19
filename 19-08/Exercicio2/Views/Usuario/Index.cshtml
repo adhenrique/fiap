@@ -1,0 +1,41 @@
+﻿@model List<Usuario>
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<!DOCTYPE html>
+
+<div class="row">
+    <div class="col-12">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Data nascimento</th>
+                    <th scope="col">Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null)
+                {
+                    @foreach (var usuario in Model)
+                    {
+                        <tr>
+                            <td>@usuario.Nome</td>
+                            <td>@usuario.DataNascimento</td>
+                            <td>@usuario.Email</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="3">
+                            Nao existem dados a serem mostrados.
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
