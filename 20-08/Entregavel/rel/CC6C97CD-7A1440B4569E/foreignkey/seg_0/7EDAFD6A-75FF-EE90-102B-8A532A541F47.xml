@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7EDAFD6A-75FF-EE90-102B-8A532A541F47" containerWithKeyObject="6B9B639D-D2EB-6D6E-E40F-C58BBE457A25" localFKIndex="15D20F5D-978A-0EBA-3C58-7A22F1434A00" name="SK_PRODUTO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:28:53 UTC</createdTime>
+<generatorID>8014FAE6-5BE5-2D8B-2B43-D92B81BFE57E</generatorID>
+<ownerDesignName>Entregavel</ownerDesignName>
+<referredTableLongName>DIM_PRODUTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>84F462FA-28BF-0A01-DD33-F84E6EC9DFD8</referredTableID>
+<keyObject>3245FA65-EADD-6C76-4DE9-0685B8A305B3</keyObject>
+<referredKeyID>3245FA65-EADD-6C76-4DE9-0685B8A305B3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_PRODUTO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

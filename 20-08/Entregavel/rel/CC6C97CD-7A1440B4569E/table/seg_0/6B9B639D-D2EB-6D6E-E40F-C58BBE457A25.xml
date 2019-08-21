@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6B9B639D-D2EB-6D6E-E40F-C58BBE457A25" name="FTO_VENDA_VAREJO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:26:36 UTC</createdTime>
+<generatorID>F32A38C3-E03C-9D80-CB08-A039693F0C4D</generatorID>
+<ownerDesignName>Entregavel</ownerDesignName>
+<typeID>1</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_LOJA" id="F2049529-495C-B19B-0FA2-8DC375876AE8">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:27:52 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="70906884-06B3-6A5C-E0AC-74EF4760E781" referredColumn="56997BC3-C388-0C59-A4EF-3A705D2DAA5A"/>
+</associations>
+</Column>
+<Column name="SK_TEMPO" id="B1B90CB0-7A08-F3C0-37A5-CCEB72ED6F63">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:29:27 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ADC5CC72-9E96-9BEF-3DED-9E93111AFDF3" referredColumn="380D64D2-BC47-5D11-24EC-0D696CB703E2"/>
+</associations>
+</Column>
+<Column name="SK_PRODUTO" id="568B370E-040C-59D9-4573-669E04D4635D">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:28:53 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7EDAFD6A-75FF-EE90-102B-8A532A541F47" referredColumn="2040EFE9-5886-B53D-E4F0-F621969B1002"/>
+</associations>
+</Column>
+<Column name="VL_TOTAL_VENDA" id="56E234B9-2CD3-B5A6-2FDB-AAEC891194BF">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:26:36 UTC</createdTime>
+<generatorID>00F2AF8B-FC4F-E8F6-4076-C17845BA7F28</generatorID>
+<ownerDesignName>Entregavel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_QTD_VENDIDA" id="184C05CA-CFBF-35C7-0762-1A03C2034B35">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:26:36 UTC</createdTime>
+<generatorID>3077C974-7AB0-67B7-54E5-C819F03AFEA4</generatorID>
+<ownerDesignName>Entregavel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="987EB692-1C18-8712-C5F8-E68D910323AE" name="FTO_VENDA_VAREJO_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:26:36 UTC</createdTime>
+<generatorID>C2224B10-8036-0B34-498D-8F16B4E52089</generatorID>
+<ownerDesignName>Entregavel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2049529-495C-B19B-0FA2-8DC375876AE8"/>
+<colUsage columnID="568B370E-040C-59D9-4573-669E04D4635D"/>
+<colUsage columnID="B1B90CB0-7A08-F3C0-37A5-CCEB72ED6F63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A7DF1A0F-E952-5A35-0826-452D79A9B7C1" name="FTO_VENDA_VAREJO_DIM_LOJA_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:27:52 UTC</createdTime>
+<generatorID>1861FA15-14A4-9ACF-3E30-0B9BBCB35FEE</generatorID>
+<ownerDesignName>Entregavel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2049529-495C-B19B-0FA2-8DC375876AE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="15D20F5D-978A-0EBA-3C58-7A22F1434A00" name="SK_PRODUTO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:28:53 UTC</createdTime>
+<generatorID>8014FAE6-5BE5-2D8B-2B43-D92B81BFE57E</generatorID>
+<ownerDesignName>Entregavel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="568B370E-040C-59D9-4573-669E04D4635D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EBB805E4-2690-9C38-FF36-939A0425BE58" name="SK_TEMPO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:29:27 UTC</createdTime>
+<generatorID>3BC68610-9DED-B294-CB08-41A4928F35FA</generatorID>
+<ownerDesignName>Entregavel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1B90CB0-7A08-F3C0-37A5-CCEB72ED6F63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

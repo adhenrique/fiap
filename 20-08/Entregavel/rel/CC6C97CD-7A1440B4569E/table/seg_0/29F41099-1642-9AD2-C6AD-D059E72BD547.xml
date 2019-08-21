@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="29F41099-1642-9AD2-C6AD-D059E72BD547" name="DIM_LOJA">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:26:36 UTC</createdTime>
+<generatorID>22B741E7-94EA-6470-2B9F-6666687A6AE8</generatorID>
+<ownerDesignName>Entregavel</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_LOJA" id="56997BC3-C388-0C59-A4EF-3A705D2DAA5A">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:26:36 UTC</createdTime>
+<generatorID>7AEFB241-BF32-01AC-E595-43D4F8B637C7</generatorID>
+<ownerDesignName>Entregavel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_LOJA" id="0B14F6A6-8E42-FE23-27A0-23C65E353310">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:26:36 UTC</createdTime>
+<generatorID>BFA37D38-76C4-63CC-5459-EB142F183981</generatorID>
+<ownerDesignName>Entregavel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_DISTRITO" id="CA78EC5A-0FDB-7759-C61E-F7084A6F95AD">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:26:36 UTC</createdTime>
+<generatorID>470A4296-CCDB-7599-E705-D09C568844B6</generatorID>
+<ownerDesignName>Entregavel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_REGIAO" id="DE95AA26-11A6-F856-B2DC-90C4D376FBB1">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:26:36 UTC</createdTime>
+<generatorID>AAC51C2C-F17D-1B19-AB4D-1135C381DCD6</generatorID>
+<ownerDesignName>Entregavel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_ESTADO" id="2DE82E6E-BFC2-265F-CF87-44789D933585">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:26:36 UTC</createdTime>
+<generatorID>9E5C2332-5144-A636-A24E-AE59CD2C662D</generatorID>
+<ownerDesignName>Entregavel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="48D9BA95-A9DF-9500-3830-01BC7D8E10AF" name="DIM_LOJA_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:26:36 UTC</createdTime>
+<generatorID>1861FA15-14A4-9ACF-3E30-0B9BBCB35FEE</generatorID>
+<ownerDesignName>Entregavel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56997BC3-C388-0C59-A4EF-3A705D2DAA5A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

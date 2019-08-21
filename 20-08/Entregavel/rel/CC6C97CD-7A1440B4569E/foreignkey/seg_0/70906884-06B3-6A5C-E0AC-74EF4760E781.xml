@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="70906884-06B3-6A5C-E0AC-74EF4760E781" containerWithKeyObject="6B9B639D-D2EB-6D6E-E40F-C58BBE457A25" localFKIndex="A7DF1A0F-E952-5A35-0826-452D79A9B7C1" name="FTO_VENDA_VAREJO_DIM_LOJA_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:27:52 UTC</createdTime>
+<generatorID>1861FA15-14A4-9ACF-3E30-0B9BBCB35FEE</generatorID>
+<ownerDesignName>Entregavel</ownerDesignName>
+<referredTableLongName>DIM_LOJA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>29F41099-1642-9AD2-C6AD-D059E72BD547</referredTableID>
+<keyObject>48D9BA95-A9DF-9500-3830-01BC7D8E10AF</keyObject>
+<referredKeyID>48D9BA95-A9DF-9500-3830-01BC7D8E10AF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_LOJA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Entregavel" id="59222722-45DE-61FC-DE26-97D3EBBF3E1F" version="3.5">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:11:00 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>59222722-45DE-61FC-DE26-97D3EBBF3E1F</designId>
+</OSDM_Design>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="22B741E7-94EA-6470-2B9F-6666687A6AE8" name="DIM_LOJA" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="2D9A8067-6D49-4379-7DC3-C2FB471BCCED" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="79BA27B4-10B6-006A-A7B2-425AB0B1D133" name="DIM_PRODUTO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="2D9A8067-6D49-4379-7DC3-C2FB471BCCED" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="29D106F7-FF38-BEAC-18E1-153DC0649AE5" name="DIM_TEMPO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="2D9A8067-6D49-4379-7DC3-C2FB471BCCED" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="F32A38C3-E03C-9D80-CB08-A039693F0C4D" name="FTO_VENDA_VAREJO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="2D9A8067-6D49-4379-7DC3-C2FB471BCCED" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

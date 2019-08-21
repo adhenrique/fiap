@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="ADC5CC72-9E96-9BEF-3DED-9E93111AFDF3" containerWithKeyObject="6B9B639D-D2EB-6D6E-E40F-C58BBE457A25" localFKIndex="EBB805E4-2690-9C38-FF36-939A0425BE58" name="SK_TEMPO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:29:27 UTC</createdTime>
+<generatorID>3BC68610-9DED-B294-CB08-41A4928F35FA</generatorID>
+<ownerDesignName>Entregavel</ownerDesignName>
+<referredTableLongName>DIM_TEMPO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>456327C7-28F4-F2BB-35E7-2B0DD941F001</referredTableID>
+<keyObject>55345105-A7D7-0539-A338-D4352474D669</keyObject>
+<referredKeyID>55345105-A7D7-0539-A338-D4352474D669</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_TEMPO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

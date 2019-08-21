@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="79BA27B4-10B6-006A-A7B2-425AB0B1D133" name="DIM_PRODUTO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:18:42 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<engineerTo>
+<item key="CC6C97CD-0215-5893-E5CD-7A1440B4569E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SK_PRODUTO" id="F78880CE-5611-3F72-4990-33152AD874E7">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:18:54 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<engineerTo>
+<item key="CC6C97CD-0215-5893-E5CD-7A1440B4569E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_PRODUTO" id="2B108AF1-6013-652D-3E42-0746D80F6F1F">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:18:54 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<engineerTo>
+<item key="CC6C97CD-0215-5893-E5CD-7A1440B4569E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_GRUPO" id="6B34AA4B-F6DA-CEC5-9525-0377772365D0">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:18:54 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<engineerTo>
+<item key="CC6C97CD-0215-5893-E5CD-7A1440B4569E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_LINHA_PROD" id="45F4FF9C-D48A-D724-CFBF-1E0DA4496AD9">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:18:54 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<engineerTo>
+<item key="CC6C97CD-0215-5893-E5CD-7A1440B4569E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8014FAE6-5BE5-2D8B-2B43-D92B81BFE57E" name="DIM_PRODUTO PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:19:09 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<engineerTo>
+<item key="CC6C97CD-0215-5893-E5CD-7A1440B4569E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F78880CE-5611-3F72-4990-33152AD874E7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

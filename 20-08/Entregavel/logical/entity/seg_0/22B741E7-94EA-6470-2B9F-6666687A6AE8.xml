@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="22B741E7-94EA-6470-2B9F-6666687A6AE8" name="DIM_LOJA">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:11:36 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<engineerTo>
+<item key="CC6C97CD-0215-5893-E5CD-7A1440B4569E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SK_LOJA" id="7AEFB241-BF32-01AC-E595-43D4F8B637C7">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:11:46 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<engineerTo>
+<item key="CC6C97CD-0215-5893-E5CD-7A1440B4569E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_LOJA" id="BFA37D38-76C4-63CC-5459-EB142F183981">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:11:47 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<engineerTo>
+<item key="CC6C97CD-0215-5893-E5CD-7A1440B4569E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_DISTRITO" id="470A4296-CCDB-7599-E705-D09C568844B6">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:11:48 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<engineerTo>
+<item key="CC6C97CD-0215-5893-E5CD-7A1440B4569E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_REGIAO" id="AAC51C2C-F17D-1B19-AB4D-1135C381DCD6">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:11:48 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<engineerTo>
+<item key="CC6C97CD-0215-5893-E5CD-7A1440B4569E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_ESTADO" id="9E5C2332-5144-A636-A24E-AE59CD2C662D">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:11:49 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<engineerTo>
+<item key="CC6C97CD-0215-5893-E5CD-7A1440B4569E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1861FA15-14A4-9ACF-3E30-0B9BBCB35FEE" name="DIM_LOJA PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:13:35 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<engineerTo>
+<item key="CC6C97CD-0215-5893-E5CD-7A1440B4569E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7AEFB241-BF32-01AC-E595-43D4F8B637C7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

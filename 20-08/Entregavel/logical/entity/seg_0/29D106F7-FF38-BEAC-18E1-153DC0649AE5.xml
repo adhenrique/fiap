@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="29D106F7-FF38-BEAC-18E1-153DC0649AE5" name="DIM_TEMPO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:16:56 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<engineerTo>
+<item key="CC6C97CD-0215-5893-E5CD-7A1440B4569E" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SK_TEMPO" id="78B2FF70-1B46-8B71-2E36-E9AAE27DB4D1">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:17:06 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<engineerTo>
+<item key="CC6C97CD-0215-5893-E5CD-7A1440B4569E" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_EVENTO" id="4C552F6B-8B39-89D6-DBB8-1DB3E1C29CCA">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:17:06 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<engineerTo>
+<item key="CC6C97CD-0215-5893-E5CD-7A1440B4569E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_DIA" id="5F240DBD-C0BB-CBCF-38B4-01D3CF0F40E0">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:17:06 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<engineerTo>
+<item key="CC6C97CD-0215-5893-E5CD-7A1440B4569E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_MES" id="600D297A-38BC-4190-C8FA-E220E6EEFBBE">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:17:06 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<engineerTo>
+<item key="CC6C97CD-0215-5893-E5CD-7A1440B4569E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_MES" id="800798D2-7F5F-4983-3054-7D78DFC467FC">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:17:06 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<engineerTo>
+<item key="CC6C97CD-0215-5893-E5CD-7A1440B4569E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_ANO" id="122B47FE-4098-FCC4-376A-C0EB88312B42">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:17:07 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<engineerTo>
+<item key="CC6C97CD-0215-5893-E5CD-7A1440B4569E" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3BC68610-9DED-B294-CB08-41A4928F35FA" name="DIM_TEMPO PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:17:40 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<engineerTo>
+<item key="CC6C97CD-0215-5893-E5CD-7A1440B4569E" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>78B2FF70-1B46-8B71-2E36-E9AAE27DB4D1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

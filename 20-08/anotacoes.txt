@@ -1,0 +1,11 @@
+dado mestre, é um dado que pode ser reutilizado
+
+as tabelas que tem maior volume de dado, do modelo relacional, os atributos geralmente são atributos de medida.
+esses atributos sao candidatos a participarem da taela fato
+ex:
+	vl_total_venda
+	data_entrega
+	quantidade
+	...
+
+cubo é praticamente uma view fisica no banco de dados

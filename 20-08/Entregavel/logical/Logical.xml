@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="2D9A8067-6D49-4379-7DC3-C2FB471BCCED" mainViewID="58ECA540-3AA0-ADB1-5D08-A9DD6772ED83">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:11:00 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

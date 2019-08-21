@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="FA818225-F09D-A75A-8029-BD921ED12E1F">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-20 23:11:00 UTC</createdTime>
+<ownerDesignName>Entregavel</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>
