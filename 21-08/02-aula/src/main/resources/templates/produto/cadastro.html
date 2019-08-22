@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+<body>
+<form action="/produto/cadastro" method="post">
+    <p>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+    </p>
+    <p>
+        <label for="preco">Preço</label>
+        <input type="text" name="preco" id="preco">
+    </p>
+    <p>
+        <label for="descricao">Descrição</label>
+        <textarea name="descricao" id="descricao"></textarea>
+    </p>
+    <p>
+        <button>Salvar</button>
+    </p>
+</form>
+<p th:if="${msg}" th:text="${msg}"></p>
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th scope="col">id</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Preço</th>
+            <th scope="col">Descrição</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="usuario : ${usuarios}">
+            <th th:text="${usuario.codigo}">...</th>
+            <td th:text="${usuario.nome}">...</td>
+            <td th:text="${usuario.preco}">...</td>
+            <td th:text="${usuario.descricao}">...</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

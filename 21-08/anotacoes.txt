@@ -1,0 +1,10 @@
+java ee
+    servlets
+    axis
+    jse
+    jsf
+
+injeção de dependencia
+    vc nao precisa instanciar as classes
+    recebemos como parametro do construtor
+
