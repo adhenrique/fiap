@@ -51,4 +51,18 @@ class CarsTableViewController: UITableViewController {
         cell.detailTextLabel?.text = car.brand
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let car = cars[indexPath.row]
+            API.deleteCar(car) { (success) in
+                if success {
+                    self.cars.remove(at: indexPath.row)
+                    DispatchQueue.main.async {
+                        self.tableView.deleteRows(at: [indexPath], with: UITableView.RowAnimation.automatic)
+                    }
+                }
+            }
+        }
+    }
 }

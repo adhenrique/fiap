@@ -42,13 +42,25 @@ class AddEditViewController: UIViewController {
         
         if car._id.isEmpty {
             API.createCar(car) { (success) in
-                
+                if success {
+                    self.goBack()
+                }
             }
         } else {
             API.updateCar(car) { (success) in
-                
+                if success {
+                    self.goBack()
+                }
             }
         }
     }
     
+    func goBack() {
+        // se formos para nova tela, utilizando a navigation controller - que é o nosso caso - entao pedimos a navigation para voltar
+        // toda a view controller possui uma navigationController
+        // por conta de nao estarmos na main thread, entao utilizamos queue
+        DispatchQueue.main.async {
+            self.navigationController?.popViewController(animated: true)
+        }
+    }
 }
