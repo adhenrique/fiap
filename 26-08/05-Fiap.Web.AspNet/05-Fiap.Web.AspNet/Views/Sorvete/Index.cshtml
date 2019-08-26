@@ -1,0 +1,62 @@
+﻿@model List<Sorvete>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<alerta mensagem="@TempData["msg"]" tipo="success"></alerta>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model[0].Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].DataVencimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].Vegano)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model[0].Tipo)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @item.Nome
+                    </td>
+                    <td>
+                        @item.DataVencimento.ToShortDateString()
+                    </td>
+                    <td>
+                        @(item.Vegano ? "Vegano" : "Normal")
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Tipo)
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="6">
+                    Nao existem dados a serem mostrados.
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
