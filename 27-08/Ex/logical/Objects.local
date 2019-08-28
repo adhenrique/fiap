@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="A2FB8C0D-F07C-1B97-89D2-D295084C407D" name="DIM_FORMA_PAGTO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="D2467A8E-1307-5AE9-F974-759B4F6514A6" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="42D32915-F365-491F-2B5F-A1FE735DA5CD" name="DIM_FORNECEDOR" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="D2467A8E-1307-5AE9-F974-759B4F6514A6" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="A8F4C6E7-AD0E-C645-BEAD-3DB676223E4D" name="DIM_TEMPO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="D2467A8E-1307-5AE9-F974-759B4F6514A6" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="F63FEA27-4635-0BD5-82CE-0913C58BDCD7" name="DIM_UNIDADE_HOSPITALAR" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="D2467A8E-1307-5AE9-F974-759B4F6514A6" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

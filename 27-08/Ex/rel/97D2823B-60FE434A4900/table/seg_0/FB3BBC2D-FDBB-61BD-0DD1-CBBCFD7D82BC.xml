@@ -1,0 +1,238 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FB3BBC2D-FDBB-61BD-0DD1-CBBCFD7D82BC" name="FTO_VENDA">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:20:48 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<typeID>1</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_FORNECEDOR" id="06A9D223-2E21-B75E-D15B-D603D247E3E8">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:25:13 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B21A9D3C-4335-F598-45EB-20E6C89B0BAF" referredColumn="07DA8F0C-AA90-BBFC-9116-026ECE31838F"/>
+</associations>
+</Column>
+<Column name="SK_UNIDADE_HOSPITALAR" id="9BE18D6B-ADCC-09C0-C31D-380A2CB45643">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:25:52 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8AE105D5-E269-9CBC-BF45-666AF93C9570" referredColumn="F733D843-8945-E4DE-D262-2C3851585320"/>
+</associations>
+</Column>
+<Column name="SK_PRODUTO" id="770AACED-3712-CA87-F2D2-E668729A656A">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:26:01 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2643850-8022-13CD-390F-595A55369A4B" referredColumn="207093C2-6E38-6F3D-A788-EAD29D7FC590"/>
+</associations>
+</Column>
+<Column name="SK_FORMA_PAGTO" id="1E0D2B52-1063-F124-AEB3-100F8BAA5768">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:26:08 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5089A6A0-392D-10E6-7FFE-553FD7682915" referredColumn="4CFF9012-BA3A-8769-3769-E5FFE1F209F9"/>
+</associations>
+</Column>
+<Column name="SK_TEMPO" id="AA597D56-2034-2711-4796-E07891DDA8C4">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:26:16 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1FB1D3D9-4F9D-B02B-37C4-C3564EEC3A2C" referredColumn="D1B17796-C93F-EA98-EC49-B8EFDDDB01E4"/>
+</associations>
+</Column>
+<Column name="VL_PRECO_COTACAO" id="2CBBFB67-CB3B-E1E6-3852-6B1445D832AA">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:23:13 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_DESC_OBTIDO" id="DAAFADCC-D26B-0188-8864-2D2B0964E119">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:23:13 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERC_DESCONTO_OBTIDO" id="819EC45C-8800-96BF-60C7-6C53419AED97">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:23:13 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_TOTAL_PAGO" id="890973E0-024A-381E-9F77-5139D3172F70">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:23:13 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QT_ADIQUIRIDA" id="82557881-9192-6693-3303-741C36E14FF8">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:23:13 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QT_DIAS_ENTREGA" id="371321BD-AB98-5C53-46EC-76E4710702D8">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:23:13 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERC_DE_IMPOSTO" id="531126E5-3AD2-3266-2747-05CE4A1187A4">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:23:13 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_IMPOSTO" id="73169E52-2EB7-66E8-0172-D4287B9C42A5">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:23:13 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CFC6E312-D0B6-2DBF-8D97-C5662E12F2AD" name="FTO_VENDA_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:36:11 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="06A9D223-2E21-B75E-D15B-D603D247E3E8"/>
+<colUsage columnID="9BE18D6B-ADCC-09C0-C31D-380A2CB45643"/>
+<colUsage columnID="770AACED-3712-CA87-F2D2-E668729A656A"/>
+<colUsage columnID="1E0D2B52-1063-F124-AEB3-100F8BAA5768"/>
+<colUsage columnID="AA597D56-2034-2711-4796-E07891DDA8C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC7EA0F4-664F-779D-3176-FAC30B9459F0" name="DIM_FORN_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:25:13 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="06A9D223-2E21-B75E-D15B-D603D247E3E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="897ABE09-3066-65D4-3014-60D685B06297" name="DIM_UNI_HOSP_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:25:52 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9BE18D6B-ADCC-09C0-C31D-380A2CB45643"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8606E900-AB82-E48F-CE58-7E8EE53D767B" name="DIM_PRODUTO_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:26:01 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="770AACED-3712-CA87-F2D2-E668729A656A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9632E1B7-A0CF-B115-0D7D-6FC88FF4B217" name="DIM_FORM_PAGTO_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:26:08 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1E0D2B52-1063-F124-AEB3-100F8BAA5768"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E737036-EA96-1A71-A928-B2AD20D700F6" name="DIM_TEMPO_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:26:16 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA597D56-2034-2711-4796-E07891DDA8C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,3 @@
+temos varios tipos de bus matrix
+o que é dado cadastral, geramente vai para dimensão
+o que é calculo, metrica, agregacao, sum, average, max, vai para a fato

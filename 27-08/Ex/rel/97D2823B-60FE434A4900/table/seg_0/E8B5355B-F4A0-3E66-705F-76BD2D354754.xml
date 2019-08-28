@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E8B5355B-F4A0-3E66-705F-76BD2D354754" name="DIM_FORMA_PAGTO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:12:07 UTC</createdTime>
+<generatorID>A2FB8C0D-F07C-1B97-89D2-D295084C407D</generatorID>
+<ownerDesignName>Ex</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_FORMA_PAGAMENTO" id="4CFF9012-BA3A-8769-3769-E5FFE1F209F9">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:17:47 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_FORMA_PAGAMENTO" id="BBADDBBA-058C-C2A0-6243-9B6FC04FCB4F">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:17:47 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERC_DESCONTO_OBTIDO" id="D13ED769-5811-0D7B-6775-84A4860A49EA">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:17:47 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QT_PARCELAS" id="2668D07E-7CAA-3FEA-ED2D-DFB2974184F0">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:17:47 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="67BCDBAF-499D-176D-7E2F-30D5A5287074" name="DIM_FORMA_PAGTO_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:17:47 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CFF9012-BA3A-8769-3769-E5FFE1F209F9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

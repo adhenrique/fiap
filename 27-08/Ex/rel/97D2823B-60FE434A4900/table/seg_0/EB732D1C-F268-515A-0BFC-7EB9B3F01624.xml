@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EB732D1C-F268-515A-0BFC-7EB9B3F01624" name="DIM_FORNECEDOR">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:12:07 UTC</createdTime>
+<generatorID>42D32915-F365-491F-2B5F-A1FE735DA5CD</generatorID>
+<ownerDesignName>Ex</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_FORNECEDOR" id="07DA8F0C-AA90-BBFC-9116-026ECE31838F">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:12:41 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CNPJ" id="F1598ABF-7B42-08E5-2BE1-4DC01651B465">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:12:41 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_FORNECEDOR" id="10797F6C-62B1-2598-DC36-93E235A3C6BB">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:12:41 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_FUNDACAO" id="AB92411D-A492-A2F0-CCD6-53F82D1A061E">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:12:41 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_ESTRELAS" id="52C183E4-408E-A0C7-DEDC-5CD03887E148">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:12:41 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO" id="71595D9E-03D9-671E-F3F1-39CB286B4FBB">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:12:41 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIDADE" id="C787194C-F0A7-A8E2-F26D-D5A8C2CD0798">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:12:41 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BAIRRO" id="30B11C71-D98A-0330-526E-B86008A6583F">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:12:41 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1D4287A1-5FAF-029C-6A2C-40CE1F6ADA0A" name="DIM_FORNECEDOR_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:12:41 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="07DA8F0C-AA90-BBFC-9116-026ECE31838F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

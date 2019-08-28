@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="72CFC041-7C66-BD43-20A4-2A2AFE65D56B" name="DIM_TEMPO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:12:07 UTC</createdTime>
+<generatorID>A8F4C6E7-AD0E-C645-BEAD-3DB676223E4D</generatorID>
+<ownerDesignName>Ex</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_TEMPO" id="D1B17796-C93F-EA98-EC49-B8EFDDDB01E4">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:20:03 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_COMPRA" id="39100EDA-9C09-B7CF-301B-D2682642BD91">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:18:38 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANO" id="3BA01609-7560-271A-5809-42D552AF2243">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:18:38 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MES" id="C2D005F0-E178-A06C-CBAC-3C4860C36E4D">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:18:38 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HORA" id="E24A2E19-487B-5C5C-E531-10BFC5778F12">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:18:38 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4FE92967-EB68-B63D-8740-012B903C2E38" name="DIM_TEMPO_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:20:03 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1B17796-C93F-EA98-EC49-B8EFDDDB01E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

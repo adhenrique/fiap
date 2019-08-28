@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DC1F0405-9DA0-C79F-D676-8536DB70984B" name="DIM_UNIDADE_HOSPITALAR">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:12:07 UTC</createdTime>
+<generatorID>F63FEA27-4635-0BD5-82CE-0913C58BDCD7</generatorID>
+<ownerDesignName>Ex</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_UNIDATE" id="F733D843-8945-E4DE-D262-2C3851585320">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:15:36 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CNPJ" id="7CA908D9-3EC1-4F88-A563-8F4FFCE0628A">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:15:36 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_UNIDADE" id="838B4545-7143-8C1D-246F-344481CD8793">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:15:36 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO" id="51B3D15B-D16A-A42B-7015-1497F2B39813">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:15:36 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIDADE" id="DAC36612-0BDE-5EFD-FCFB-F437773B356A">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:15:36 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BAIRRO" id="0635225C-2E20-2F58-777A-9DC94946874A">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:15:36 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOGRADOURO" id="06B1B915-58B4-AA6A-4E1D-B4FFD159CDD2">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:15:36 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD08F6AA-75A7-9EF4-BBC3-B47EB2429BCD" name="DIM_UNIDADE_HOSPITALAR_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:15:36 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F733D843-8945-E4DE-D262-2C3851585320"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

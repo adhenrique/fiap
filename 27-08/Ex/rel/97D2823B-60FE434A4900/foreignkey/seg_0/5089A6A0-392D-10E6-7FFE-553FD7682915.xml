@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5089A6A0-392D-10E6-7FFE-553FD7682915" containerWithKeyObject="FB3BBC2D-FDBB-61BD-0DD1-CBBCFD7D82BC" localFKIndex="9632E1B7-A0CF-B115-0D7D-6FC88FF4B217" name="DIM_FORM_PAGTO_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-08-27 23:26:08 UTC</createdTime>
+<ownerDesignName>Ex</ownerDesignName>
+<referredTableLongName>DIM_FORMA_PAGTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E8B5355B-F4A0-3E66-705F-76BD2D354754</referredTableID>
+<keyObject>67BCDBAF-499D-176D-7E2F-30D5A5287074</keyObject>
+<referredKeyID>67BCDBAF-499D-176D-7E2F-30D5A5287074</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_FORMA_PAGAMENTO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
