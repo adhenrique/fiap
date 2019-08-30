@@ -1,0 +1,5 @@
+podemos usar 
+pontos ajustados - notas de 0 a 5
+
+teleprocessamento - comunicacao de longa distancia
+processamento distrubuido - processamento paralelo
