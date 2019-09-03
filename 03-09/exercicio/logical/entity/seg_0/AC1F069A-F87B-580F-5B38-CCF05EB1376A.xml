@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AC1F069A-F87B-580F-5B38-CCF05EB1376A" name="DIM_UNIDADE">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:36:04 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<engineerTo>
+<item key="50DAF716-8530-8238-2E5F-CB33617A81FC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SK_UNIDADE" id="F0F83763-960D-1D37-5050-F42E216F8008">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:36:46 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<engineerTo>
+<item key="50DAF716-8530-8238-2E5F-CB33617A81FC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_UNIDADE" id="548ACE8A-9C80-CB59-DF8F-825F07396A6C">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:36:46 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<engineerTo>
+<item key="50DAF716-8530-8238-2E5F-CB33617A81FC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ESTADO" id="20673628-3437-7143-A1BC-85F3528C5680">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:36:46 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<engineerTo>
+<item key="50DAF716-8530-8238-2E5F-CB33617A81FC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CIDADE" id="BE27963D-B995-5E70-75E2-016D6B81DDDB">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:36:46 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<engineerTo>
+<item key="50DAF716-8530-8238-2E5F-CB33617A81FC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BAIRRO" id="AF3B50B9-1919-3F33-1E07-5DD560A78AC0">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:36:46 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<engineerTo>
+<item key="50DAF716-8530-8238-2E5F-CB33617A81FC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOGRADOURO" id="9E034D0E-9E3A-EE36-2CEC-70F45ABE6D2F">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:36:47 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<engineerTo>
+<item key="50DAF716-8530-8238-2E5F-CB33617A81FC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CNPJ" id="120CB681-E0CD-B136-414C-7655BD05DF06">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:36:52 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<engineerTo>
+<item key="50DAF716-8530-8238-2E5F-CB33617A81FC" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

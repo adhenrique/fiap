@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FB8F5C46-6FDA-F6A9-8DB9-91B4406D1E1C" containerWithKeyObject="DB5ED5E2-6FE5-EC28-052C-3AEA5E7435A2" localFKIndex="25F4CAC5-0E77-A271-CE97-4FB331ABD459" name="TEMPO_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:46:56 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<referredTableLongName>DIM_TEMPO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>32047493-FCFE-8EBD-048C-C9B4E5FFE822</referredTableID>
+<keyObject>F9F275ED-4562-7E2A-A23C-FBA0767E8B50</keyObject>
+<referredKeyID>F9F275ED-4562-7E2A-A23C-FBA0767E8B50</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_TEMPO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

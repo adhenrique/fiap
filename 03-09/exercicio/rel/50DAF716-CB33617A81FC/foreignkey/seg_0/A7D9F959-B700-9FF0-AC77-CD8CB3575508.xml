@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A7D9F959-B700-9FF0-AC77-CD8CB3575508" containerWithKeyObject="DB5ED5E2-6FE5-EC28-052C-3AEA5E7435A2" localFKIndex="8B03D253-DF9E-D9D4-C2D5-7FAFAC3F0348" name="PROD_SERV_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:47:07 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<referredTableLongName>DIM_PROD_SERV</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EF4559DC-1030-B84E-30B4-EF31908770A8</referredTableID>
+<keyObject>B648C1E0-C2B0-A282-E173-B1D0E4808815</keyObject>
+<referredKeyID>B648C1E0-C2B0-A282-E173-B1D0E4808815</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_PROD_SERV</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

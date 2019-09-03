@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="32047493-FCFE-8EBD-048C-C9B4E5FFE822" name="DIM_TEMPO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:40:48 UTC</createdTime>
+<generatorID>B9CE701C-832F-E4A6-F928-EFEE51047CB7</generatorID>
+<ownerDesignName>exercicio</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_TEMPO" id="B387A9AF-D511-8A90-7C96-C1FC4876E36E">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:45:30 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_INICIO" id="6EFA49F3-3451-F161-E39C-549F2A570063">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:40:48 UTC</createdTime>
+<generatorID>FA31C549-B72E-0D39-3BFA-6FA599BB48F3</generatorID>
+<ownerDesignName>exercicio</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_FIM" id="1BCBDEB6-1E5A-2B34-43BC-3A3421650EDA">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:40:48 UTC</createdTime>
+<generatorID>AA4AFD3A-0CF0-231E-D42F-37ED41E8E682</generatorID>
+<ownerDesignName>exercicio</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIA" id="A6B8F6F8-BEF7-0DAC-DB86-D18A8A4BAF82">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:40:48 UTC</createdTime>
+<generatorID>6992F242-3C0D-3B26-3F46-C7E8ADF22B5F</generatorID>
+<ownerDesignName>exercicio</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MES" id="8B034852-9609-D148-AB63-72F980017BCE">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:40:48 UTC</createdTime>
+<generatorID>F4B6B4C1-451B-B3AC-D7E3-F732D3BDF85E</generatorID>
+<ownerDesignName>exercicio</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANO" id="6FB23FA2-4DF6-8141-CCB6-23EC3CEF5A9D">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:40:48 UTC</createdTime>
+<generatorID>E048EDA2-0D34-161F-DD0B-E0CBF27DC4F9</generatorID>
+<ownerDesignName>exercicio</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIA_DA_SEMANA" id="A5A5A70B-9969-EFE5-8C30-98652FCE4D1F">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:40:48 UTC</createdTime>
+<generatorID>C63DAC74-DBC8-6E4B-73E0-980CC4355FAD</generatorID>
+<ownerDesignName>exercicio</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F9F275ED-4562-7E2A-A23C-FBA0767E8B50" name="DIM_TEMPO_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:45:30 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B387A9AF-D511-8A90-7C96-C1FC4876E36E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B6EB6BCB-3962-D38E-5904-7E5252EC0C07" name="DIM_PROMOCAO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:40:48 UTC</createdTime>
+<generatorID>AE495ACF-2073-EDE3-DF1B-0B3A3005C44B</generatorID>
+<ownerDesignName>exercicio</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_DESCONTO" id="CF5FEDC4-0045-B3FD-50DA-96E759E34ACA">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:40:48 UTC</createdTime>
+<generatorID>D6DD0EAB-0955-EB3B-986A-FBE07C3A23BF</generatorID>
+<ownerDesignName>exercicio</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_PROMOCAO" id="BF936B96-963D-4087-9036-A506A96327C8">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:40:48 UTC</createdTime>
+<generatorID>A722325D-0851-FF9D-E26D-E8664818DD84</generatorID>
+<ownerDesignName>exercicio</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERC_DESCONTO" id="C20BB844-63DC-023F-A3EC-AE3983EE29DA">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:40:48 UTC</createdTime>
+<generatorID>54453C76-3B81-E233-3293-0A28AAF4685D</generatorID>
+<ownerDesignName>exercicio</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_INICIO" id="B8537A34-1DA8-C9FD-8FD8-0E51B23EDA01">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:40:48 UTC</createdTime>
+<generatorID>C4F41E52-0712-5069-B544-5621787CF50C</generatorID>
+<ownerDesignName>exercicio</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_FIM" id="20F3D7C6-67B6-2442-BFD8-DE350931D761">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:40:48 UTC</createdTime>
+<generatorID>3B625650-001D-611D-1655-6456496F6C30</generatorID>
+<ownerDesignName>exercicio</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4F6544CF-F11D-5D3E-ECAD-4CD445C88731" name="DIM_PROMOCAO_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:46:07 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF5FEDC4-0045-B3FD-50DA-96E759E34ACA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

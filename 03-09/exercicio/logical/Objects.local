@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="78F57B47-32EA-4E91-01C4-7F0F2BDF63B1" name="DIM_PROD_SERV" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="5695FD51-4287-ED67-6D0A-9E380AEE77C3" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="AE495ACF-2073-EDE3-DF1B-0B3A3005C44B" name="DIM_PROMOCAO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="5695FD51-4287-ED67-6D0A-9E380AEE77C3" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="B9CE701C-832F-E4A6-F928-EFEE51047CB7" name="DIM_TEMPO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="5695FD51-4287-ED67-6D0A-9E380AEE77C3" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="AC1F069A-F87B-580F-5B38-CCF05EB1376A" name="DIM_UNIDADE" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="5695FD51-4287-ED67-6D0A-9E380AEE77C3" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

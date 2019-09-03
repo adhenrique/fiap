@@ -1,0 +1,175 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB5ED5E2-6FE5-EC28-052C-3AEA5E7435A2" name="FTO_VENDA">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:41:30 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_VENDA" id="364B927E-C8C8-B64B-4343-281EC33D543C">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:42:03 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SK_TEMPO" id="AF21C202-8411-A690-FCE8-67A87F1D1A92">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:46:56 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FB8F5C46-6FDA-F6A9-8DB9-91B4406D1E1C" referredColumn="B387A9AF-D511-8A90-7C96-C1FC4876E36E"/>
+</associations>
+</Column>
+<Column name="SK_PROD_SERV" id="C72D12DD-97A4-E5A7-6926-97C687D52023">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:47:07 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A7D9F959-B700-9FF0-AC77-CD8CB3575508" referredColumn="DC569EA2-F50C-AB31-E374-3050C526BB7B"/>
+</associations>
+</Column>
+<Column name="SK_UNIDADE" id="F2840B87-8659-8CA9-A850-EAF1A7A7128D">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:47:14 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B31D6474-20CD-C4E4-06CE-F64ADF86DA86" referredColumn="6A27B297-653F-9995-7590-6E5A788D125D"/>
+</associations>
+</Column>
+<Column name="SK_DESCONTO" id="C97D9824-F9F1-4900-EDC8-F8BCEA440F1A">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:47:22 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DE1A25C9-7DCF-3DB2-E7F6-8EBCAFAB5789" referredColumn="CF5FEDC4-0045-B3FD-50DA-96E759E34ACA"/>
+</associations>
+</Column>
+<Column name="TOTAL_VENDAS" id="1020768C-0D5F-3C1C-0678-BA43C265D5A6">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:48:55 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRODUTOS_VENDIDOS" id="4BE387AF-C94B-BD17-BA8F-00C8CDD64188">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:48:55 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALOR_ICMS" id="BBC82FDE-AD16-CBB0-6335-BFB03978EEE1">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:48:55 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LUCRO_LIQUIDO" id="F66ADA15-4C7F-43AF-B832-FE4E8D6B001D">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:49:44 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="32F2D0EE-251B-916C-1E4D-35DAB7303B2D" name="FTO_VENDA_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:46:32 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="364B927E-C8C8-B64B-4343-281EC33D543C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25F4CAC5-0E77-A271-CE97-4FB331ABD459" name="TEMPO_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:46:56 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF21C202-8411-A690-FCE8-67A87F1D1A92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8B03D253-DF9E-D9D4-C2D5-7FAFAC3F0348" name="PROD_SERV_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:47:07 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C72D12DD-97A4-E5A7-6926-97C687D52023"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C4121ACB-71FB-F5A2-617B-A8B82BE8915B" name="UNIDADE_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:47:14 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2840B87-8659-8CA9-A850-EAF1A7A7128D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="316128F6-F4A1-20C2-B29B-E18687B9E421" name="PROMOCAO_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:47:22 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C97D9824-F9F1-4900-EDC8-F8BCEA440F1A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

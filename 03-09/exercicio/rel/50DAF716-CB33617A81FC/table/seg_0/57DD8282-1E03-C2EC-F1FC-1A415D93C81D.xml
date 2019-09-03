@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="57DD8282-1E03-C2EC-F1FC-1A415D93C81D" name="DIM_UNIDADE">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:40:48 UTC</createdTime>
+<generatorID>AC1F069A-F87B-580F-5B38-CCF05EB1376A</generatorID>
+<ownerDesignName>exercicio</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_UNIDADE" id="6A27B297-653F-9995-7590-6E5A788D125D">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:40:48 UTC</createdTime>
+<generatorID>F0F83763-960D-1D37-5050-F42E216F8008</generatorID>
+<ownerDesignName>exercicio</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_UNIDADE" id="407891CD-D2EE-F797-6F23-0084E84D0D5E">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:40:48 UTC</createdTime>
+<generatorID>548ACE8A-9C80-CB59-DF8F-825F07396A6C</generatorID>
+<ownerDesignName>exercicio</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO" id="9B81D5D1-D980-FA6B-D0DC-232F2D889E7A">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:40:48 UTC</createdTime>
+<generatorID>20673628-3437-7143-A1BC-85F3528C5680</generatorID>
+<ownerDesignName>exercicio</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIDADE" id="37C8ED74-6FB0-6560-C13C-8F54104977FD">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:40:48 UTC</createdTime>
+<generatorID>BE27963D-B995-5E70-75E2-016D6B81DDDB</generatorID>
+<ownerDesignName>exercicio</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BAIRRO" id="C622D198-DEDB-3E7D-878E-522387309F84">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:40:48 UTC</createdTime>
+<generatorID>AF3B50B9-1919-3F33-1E07-5DD560A78AC0</generatorID>
+<ownerDesignName>exercicio</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LOGRADOURO" id="DA4DF1D1-96AE-7ABE-3A01-DD562029DAA9">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:40:48 UTC</createdTime>
+<generatorID>9E034D0E-9E3A-EE36-2CEC-70F45ABE6D2F</generatorID>
+<ownerDesignName>exercicio</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CNPJ" id="9FD7295B-96E7-5223-938C-07F0C4AAAD0D">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:40:48 UTC</createdTime>
+<generatorID>120CB681-E0CD-B136-414C-7655BD05DF06</generatorID>
+<ownerDesignName>exercicio</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>19</dataTypeSize>
+<ownDataTypeParameters>19,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="31D38224-55AA-DF52-C07D-AD17F053407E" name="DIM_UNIDADE_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:43:37 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A27B297-653F-9995-7590-6E5A788D125D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

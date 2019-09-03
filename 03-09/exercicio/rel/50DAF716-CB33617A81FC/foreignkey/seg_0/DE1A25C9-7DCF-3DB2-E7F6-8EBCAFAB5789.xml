@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DE1A25C9-7DCF-3DB2-E7F6-8EBCAFAB5789" containerWithKeyObject="DB5ED5E2-6FE5-EC28-052C-3AEA5E7435A2" localFKIndex="316128F6-F4A1-20C2-B29B-E18687B9E421" name="PROMOCAO_FK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-03 23:47:22 UTC</createdTime>
+<ownerDesignName>exercicio</ownerDesignName>
+<referredTableLongName>DIM_PROMOCAO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B6EB6BCB-3962-D38E-5904-7E5252EC0C07</referredTableID>
+<keyObject>4F6544CF-F11D-5D3E-ECAD-4CD445C88731</keyObject>
+<referredKeyID>4F6544CF-F11D-5D3E-ECAD-4CD445C88731</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_DESCONTO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
