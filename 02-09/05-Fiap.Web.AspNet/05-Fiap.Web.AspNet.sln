@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-Fiap.Web.AspNet", "05-Fiap.Web.AspNet\05-Fiap.Web.AspNet.csproj", "{AF688F76-7573-4978-B790-7FB896AB904B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF688F76-7573-4978-B790-7FB896AB904B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF688F76-7573-4978-B790-7FB896AB904B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF688F76-7573-4978-B790-7FB896AB904B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF688F76-7573-4978-B790-7FB896AB904B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C61D9D6-1FBF-46AD-8364-C728BEFF35A2}
+	EndGlobalSection
+EndGlobal

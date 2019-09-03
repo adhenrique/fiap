@@ -1,0 +1,9 @@
+1 - criar uma classe que herda de DbContext
+2 - configurar a string de conexão com Banco - appsettings.json
+3 - Configurar a injeção de dependência do Banco - Startup.cs
+nas anotacoes da entidade, nao precisamos de definir a anotacao [Key] no campo de id,
+pois quando colocamos o sufixo no nome da prop, ele ja identifica: SorveteId
+
+Criar o banco?
+1 - criar uma migração Add-Migration nome
+2 - Aplicar a modificação na base: Update-Database

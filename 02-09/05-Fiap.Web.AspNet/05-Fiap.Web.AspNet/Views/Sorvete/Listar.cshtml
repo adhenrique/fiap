@@ -1,0 +1,32 @@
+﻿@model  IList<Sorvete>
+
+@{
+    ViewData["Title"] = "Listar";
+}
+
+<h2>Lista de sorvete</h2>
+
+<alerta texto="@TempData["msg"]"></alerta>
+
+<table class="table">
+    <tr>
+        <th>Nome</th>
+        <th>Data Vencimento</th>
+        <th>Tipo</th>
+        <th>Vegano</th>
+        <th>Ações</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Nome</td>
+            <td>@item.DataVencimento.ToShortDateString()</td>
+            <td>@item.Tipo</td>
+            <td>@(item.Vegano?"Sim":"Não")</td>
+            <td>
+                <a asp-area="" asp-controller="Sorvete" asp-action="Editar" asp-route-id="@item.SorveteId">Editar</a> |
+                <a asp-area="" asp-controller="Sorvete" asp-action="Remover" asp-route-id="@item.SorveteId">Remover</a>
+            </td>
+        </tr>
+    }
+</table>
