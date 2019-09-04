@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Listar</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h1>Gravadoras</h1>
+    <div class="col-6">
+        <table class="table">
+            <tr>
+                <th>Nome</th>
+                <th>Internacional ?</th>
+                <th>Faturamento</th>
+                <th>Data de abertura</th>
+                <th></th>
+            </tr>
+            <tr th:each="prod:${gravadoras}">
+                <td th:text="${prod.nome}"></td>
+                <td th:text="${prod.internacional ? 'Sim' : 'Não'}"></td>
+                <td th:text="${#numbers.formatDecimal(prod.faturamento, 1,2)}"></td>
+                <td th:text="${#temporals.format(prod.dataAbertura, 'dd/MM/yyyy')}"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

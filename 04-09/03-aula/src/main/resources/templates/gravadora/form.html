@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <div layout:fragment="content">
+        <h1>Cadastro de Gravadoras</h1>
+        <div class="col-6">
+            <form th:action="@{/gravadora/cadastrar}" th:object="${gravadora}" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" th:field="*{nome}" class="form-control" id="nome" placeholder="Nome da gravadora">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" th:field="*{internacional}" class="form-check-input" id="internacional">
+                    <label class="form-check-label" for="internacional">Internacional ?</label>
+                </div>
+                <div class="form-group">
+                    <label for="faturamento">Qual o faturamento?</label>
+                    <input type="text" class="form-control" th:field="*{faturamento}" id="faturamento" placeholder="Faturamento">
+                </div>
+                <div class="form-group">
+                    <label for="dataAbertura">Data de abertura</label>
+                    <input type="date" class="form-control" th:field="*{dataAbertura}" id="dataAbertura" placeholder="Data de abertura dd/mm/yyyy">
+                </div>
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
