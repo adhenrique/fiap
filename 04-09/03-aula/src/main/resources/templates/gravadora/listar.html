@@ -9,6 +9,7 @@
 <body>
 <div layout:fragment="content">
     <h1>Gravadoras</h1>
+    <div th:if="${msg}" th:text="${msg}" class="alert alert-success"></div>
     <div class="col-6">
         <table class="table">
             <tr>
@@ -23,8 +24,34 @@
                 <td th:text="${prod.internacional ? 'Sim' : 'Não'}"></td>
                 <td th:text="${#numbers.formatDecimal(prod.faturamento, 1,2)}"></td>
                 <td th:text="${#temporals.format(prod.dataAbertura, 'dd/MM/yyyy')}"></td>
+                <td>
+                    <a class="btn btn-outline-primary" th:href="@{/gravadora/editar/}+${prod.codigo}">editar</a>
+                    <a class="btn btn-outline-danger" href="#" th:onclick="|gravadoraId.value = ${prod.codigo}|" data-toggle="modal" data-target="#exampleModal">excluir</a>
+                </td>
             </tr>
         </table>
+    </div>
+    <div id="exampleModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Remover</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Certeza que deseja remover esse item?</p>
+                </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-secondary" data-dismiss="modal" value="Cancelar">
+                    <form th:action="@{/gravadora/excluir}" th:object="${gravadora}" method="post">
+                        <input type="hidden" name="codigo" id="gravadoraId">
+                        <button type="submit" class="btn btn-primary">Sim</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 </body>

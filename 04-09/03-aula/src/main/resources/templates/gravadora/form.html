@@ -12,6 +12,7 @@
         <h1>Cadastro de Gravadoras</h1>
         <div class="col-6">
             <form th:action="@{/gravadora/cadastrar}" th:object="${gravadora}" method="post">
+                <input type="hidden" th:field="*{codigo}">
                 <div class="form-group">
                     <label for="nome">Nome</label>
                     <input type="text" th:field="*{nome}" class="form-control" id="nome" placeholder="Nome da gravadora">
