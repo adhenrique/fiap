@@ -10,26 +10,42 @@
 <div layout:fragment="content">
     <h1>Gravadoras</h1>
     <div th:if="${msg}" th:text="${msg}" class="alert alert-success"></div>
-    <div class="col-6">
-        <table class="table">
-            <tr>
-                <th>Nome</th>
-                <th>Internacional ?</th>
-                <th>Faturamento</th>
-                <th>Data de abertura</th>
-                <th></th>
-            </tr>
-            <tr th:each="prod:${gravadoras}">
-                <td th:text="${prod.nome}"></td>
-                <td th:text="${prod.internacional ? 'Sim' : 'Não'}"></td>
-                <td th:text="${#numbers.formatDecimal(prod.faturamento, 1,2)}"></td>
-                <td th:text="${#temporals.format(prod.dataAbertura, 'dd/MM/yyyy')}"></td>
-                <td>
-                    <a class="btn btn-outline-primary" th:href="@{/gravadora/editar/}+${prod.codigo}">editar</a>
-                    <a class="btn btn-outline-danger" href="#" th:onclick="|gravadoraId.value = ${prod.codigo}|" data-toggle="modal" data-target="#exampleModal">excluir</a>
-                </td>
-            </tr>
-        </table>
+    <div class="row">
+        <div class="col-6">
+            <form class="form-inline" th:action="@{/gravadora/pesquisar}">
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="nome" class="sr-only">Pesquise por nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome" th:value="${pesquisa}" placeholder="Digite um nome de empresa">
+                </div>
+                <button type="submit" class="btn btn-outline-primary mb-2">Buscar</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <table class="table">
+                <tr>
+                    <th>Nome</th>
+                    <th>Internacional ?</th>
+                    <th>Faturamento</th>
+                    <th>Data de abertura</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr th:each="prod:${gravadoras}">
+                    <td th:text="${prod.nome}"></td>
+                    <td th:text="${prod.internacional ? 'Sim' : 'Não'}"></td>
+                    <td th:text="${#numbers.formatDecimal(prod.faturamento, 1,2)}"></td>
+                    <td th:text="${#temporals.format(prod.dataAbertura, 'dd/MM/yyyy')}"></td>
+                    <td>
+                        <a class="btn btn-outline-primary btn-sm" th:href="@{/gravadora/editar/}+${prod.codigo}">editar</a>
+                    </td>
+                    <td>
+                        <a class="btn btn-outline-danger btn-sm" href="#" th:onclick="|gravadoraId.value = ${prod.codigo}|" data-toggle="modal" data-target="#exampleModal">excluir</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
     <div id="exampleModal" class="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">

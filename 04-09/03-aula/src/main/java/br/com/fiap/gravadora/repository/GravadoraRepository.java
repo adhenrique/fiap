@@ -11,6 +11,8 @@ public interface GravadoraRepository
     //Pesquisar as gravadoras por nome
     List<Gravadora> findByNomeContains(String nome);
 
+    List<Gravadora> findByNomeContainsIgnoreCase(String nome);
+
     //Pesquisar por gravadoras pelo atributo internacional
     List<Gravadora> findByInternacional(boolean internacional);
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ulraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Listar Modalidades</title>
+</head>
+<body>
+    <div layout:fragment="content">
+        <h2>Listagem de Modalidades</h2>
+
+        <div class="row">
+            <div class="col-6">
+                <table class="table">
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Nome</th>
+                        <th>Individual ?</th>
+                        <th>Data</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tbody>
+                    <tr th:each="modalidade:${modalidades}">
+                        <td th:text="${modalidade.codigo}"></td>
+                        <td th:text="${modalidade.nome}"></td>
+                        <td th:text="${modalidade.individual ? 'Sim' : 'Não'}"></td>
+                        <td th:text="${#temporals.format(modalidade.data, 'dd/MM/yyyy')}"></td>
+                        <td>
+                            <a th:href="@{modalidade/editar/}+${modalidade.codigo}" class="btn btn-outline-info btn-sm">Editar</a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

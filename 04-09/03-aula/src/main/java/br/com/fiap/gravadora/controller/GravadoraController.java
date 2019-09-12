@@ -34,7 +34,7 @@ public class GravadoraController {
         rep.save(gravadora);
 
         // enviar mensagem para o front
-        redirectAttributes.addFlashAttribute("msg", "Gravadora removida.");
+        redirectAttributes.addFlashAttribute("msg", "Gravadora inserida.");
 
         // retornar a pagina
         return "redirect:/gravadora/listar";
@@ -56,5 +56,13 @@ public class GravadoraController {
 
         // retornar a pagina
         return "redirect:/gravadora/listar";
+    }
+
+    @GetMapping("pesquisar")
+    public String pesquisar(String nome, Model model) {
+        model.addAttribute("gravadoras", rep.findByNomeContainsIgnoreCase(nome));
+        model.addAttribute("pesquisa", nome);
+
+        return "gravadora/listar";
     }
 }
