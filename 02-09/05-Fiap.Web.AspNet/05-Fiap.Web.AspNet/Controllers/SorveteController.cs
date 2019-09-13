@@ -55,14 +55,29 @@ namespace _05_Fiap.Web.AspNet.Controllers
             return RedirectToAction("Listar");
         }
 
-        [HttpGet]
-        public IActionResult Remover(int id)
+        [HttpPost]
+        public IActionResult Remover(int codigo)
         {
-            var sorvete = _context.Sorvetes.Find(id);
+            var sorvete = _context.Sorvetes.Find(codigo);
             _context.Sorvetes.Remove(sorvete);
             _context.SaveChanges();
             TempData["msg"] = "Item removido";
             return RedirectToAction("Listar");
+        }
+
+        [HttpGet]
+        public IActionResult Buscar(string nome)
+        {
+            /* uma opcao para limpar a url
+            if (nome == null)
+            {
+                return RedirectToAction("Listar");
+            }
+            */
+            TempData["pesquisa"] = nome;
+            // opcao para buscar somente se propriedade nao for vazia
+            var sorvetes = _context.Sorvetes.Where(p => p.Nome.Contains(nome) || string.IsNullOrWhiteSpace(nome)).ToList();
+            return View("Listar", sorvetes);
         }
     }
 }
