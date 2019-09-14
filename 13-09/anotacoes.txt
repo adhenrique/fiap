@@ -1,0 +1,26 @@
+empirismo = tentativa e erro
+
+versão alpha = uma versao que ainda está em fabricação
+beta = nao é a versao definitiva, mas passou nos testes alpha
+    usuario testa o beta
+release candidate = distribui o soft parcialmente
+
+modelo V:
+levantamento de requisitos      -> teste de aceitação (teste das historias)
+modelagem funcional             -> teste de sistema completo (casos de teste)
+arquitetura técnica de sistema  -> teste de integração entre componentes (teste de integração com base/api)
+construção de código            -> teste unitário de código (testes com mock)
+
+tecnicas de teste
+caixa preta
+    só executo por fora. testando cadastro, update, inputs e outputs
+caixa branca ou transparente
+    executamos por dentro
+
+profundidade de arvore, é o nivel mais produndo, ou seja:
+a -> a -> a -> a
+3 niveis
+
+nesse caso precisamos somente do ultimo filho
+
+forte acoplamento - quando uma classe depende de outra8
