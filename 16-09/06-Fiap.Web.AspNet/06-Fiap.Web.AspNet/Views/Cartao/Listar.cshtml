@@ -1,0 +1,55 @@
+﻿@model IEnumerable<_06_Fiap.Web.AspNet.Models.Cartao>
+
+@{
+    ViewData["Title"] = "Listar";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataValidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Limite)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Internacional)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Bandeira)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DataValidade)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Limite)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Internacional)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Bandeira)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.CartaoId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.CartaoId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.CartaoId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
