@@ -51,7 +51,7 @@ namespace _06_Fiap.Web.AspNet.Controllers
             _context.Cartoes.Add(cartao);
             _context.SaveChanges();
             TempData["msg"] = "Cartao cadastrado com sucesso.";
-            return RedirectToAction("Listar");
+            return RedirectToAction("Index");
         }
 
         [HttpPost]
@@ -60,17 +60,17 @@ namespace _06_Fiap.Web.AspNet.Controllers
             _context.Attach(cartao).State = EntityState.Modified;
             _context.SaveChanges();
             TempData["msg"] = "Cartao editado com sucesso.";
-            return RedirectToAction("Listar");
+            return RedirectToAction("Index");
         }
 
         [HttpPost]
-        public IActionResult Remover(int id)
+        public IActionResult Remover(int codigo)
         {
-            var cartao = _context.Cartoes.Find(id);
+            var cartao = _context.Cartoes.Find(codigo);
             _context.Cartoes.Remove(cartao);
             _context.SaveChanges();
             TempData["msg"] = "Cartao removido.";
-            return RedirectToAction("Listar");
+            return RedirectToAction("Index");
         }
     }
 }
