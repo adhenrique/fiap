@@ -28,12 +28,36 @@
                         <td th:text="${modalidade.individual ? 'Sim' : 'Não'}"></td>
                         <td th:text="${#temporals.format(modalidade.data, 'dd/MM/yyyy')}"></td>
                         <td>
-                            <a th:href="@{modalidade/editar/}+${modalidade.codigo}" class="btn btn-outline-info btn-sm">Editar</a>
+                            <a th:href="@{/modalidades/editar/}+${modalidade.codigo}" class="btn btn-outline-info btn-sm">Editar</a>
                         </td>
-                        <td></td>
+                        <td>
+                            <a class="btn btn-outline-danger btn-sm" href="#" th:onclick="|modalidadeId.value = ${modalidade.codigo}|" data-toggle="modal" data-target="#exampleModal">excluir</a>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
+            </div>
+        </div>
+        <div id="exampleModal" class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Remover</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Certeza que deseja remover esse item?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <input type="button" class="btn btn-secondary" data-dismiss="modal" value="Cancelar">
+                        <form th:action="@{/modalidades/excluir}" th:object="${modalidade}" method="post">
+                            <input type="hidden" name="codigo" id="modalidadeId">
+                            <button type="submit" class="btn btn-primary">Sim</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

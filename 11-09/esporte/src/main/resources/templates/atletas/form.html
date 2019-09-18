@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ulraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h2>Cadastro de Atleta</h2>
+    <div class="row">
+        <div class="col-6">
+            <form th:action="@{/atletas/salvar}" th:object="${atleta}" method="post">
+                <input type="hidden" th:field="*{codigo}">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" th:field="*{nome}" class="form-control" placeholder="Nome do Atleta" required>
+                </div>
+                <div class="form-group">
+                    <label for="dataNascimento">Data de nascimento</label>
+                    <input type="text" id="dataNascimento" th:field="*{dataNascimento}" class="form-control" placeholder="Sua data de nascimento" required>
+                </div>
+                <div class="form-group">
+                    <label for="modalidade">Modalidade</label>
+                    <select th:field="*{modalidade}" id="modalidade" class="form-control" required>
+                        <option value="">Selecione...</option>
+                        <option th:each="modalidade:${modalidades}" th:value="${modalidade.codigo}" th:text="${modalidade.nome}"></option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-outline-info">Salvar</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

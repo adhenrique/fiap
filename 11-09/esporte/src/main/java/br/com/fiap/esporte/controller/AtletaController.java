@@ -1,6 +1,7 @@
 package br.com.fiap.esporte.controller;
 
-import br.com.fiap.esporte.model.Modalidade;
+import br.com.fiap.esporte.model.Atleta;
+import br.com.fiap.esporte.repository.AtletaRepository;
 import br.com.fiap.esporte.repository.ModalidadeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -12,48 +13,53 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
-@RequestMapping("modalidades")
-public class ModalidadeController {
+@RequestMapping("atletas")
+public class AtletaController {
 
     @Autowired
-    private ModalidadeRepository rep;
+    private AtletaRepository rep;
+
+    @Autowired
+    private ModalidadeRepository modalidadeRepository;
 
     @GetMapping("listar")
     public String listar(Model model) {
-        model.addAttribute("modalidades", rep.findAll());
-        return "modalidades/listar";
+        model.addAttribute("atletas", rep.findAll());
+        return "atletas/listar";
     }
 
     @GetMapping("criar")
-    public String criar(Modalidade modalidade) {
-        return "modalidades/form";
+    public String criar(Atleta atleta, Model model) {
+        model.addAttribute("modalidades", modalidadeRepository.findAll());
+        return "atletas/form";
     }
 
     @GetMapping("editar/{id}")
     public String editar(@PathVariable("id") int codigo, Model model) {
-        model.addAttribute("modalidade", rep.findById(codigo));
-        return "modalidades/form";
+        model.addAttribute("atleta", rep.findById(codigo));
+        model.addAttribute("modalidades", modalidadeRepository.findAll());
+        return "atletas/form";
     }
 
     // salvar
     @PostMapping("salvar")
-    public String salvar(Modalidade modalidade, RedirectAttributes redirectAttributes) {
-        rep.save(modalidade);
-        String message = "Modalidade salva";
+    public String salvar(Atleta atleta, RedirectAttributes redirectAttributes) {
+        rep.save(atleta);
+        String message = "Atleta salvo";
 
-        if (modalidade.getCodigo() > 0) {
-            message = "Modalidade atualizada";
+        if (atleta.getCodigo() > 0) {
+            message = "Atleta atualizado";
         }
         redirectAttributes.addFlashAttribute("msg", message);
 
-        return "redirect:/modalidades/listar";
+        return "redirect:/atletas/listar";
     }
 
     // deletar
     @PostMapping("excluir")
     public String excluir(int codigo, RedirectAttributes redirectAttributes) {
         rep.deleteById(codigo);
-        redirectAttributes.addAttribute("msg", "Modalidade removida");
-        return "redirect:/modalidades/listar";
+        redirectAttributes.addAttribute("msg", "Atleta removido");
+        return "redirect:/atletas/listar";
     }
 }

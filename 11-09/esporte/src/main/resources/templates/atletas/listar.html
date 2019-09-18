@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ulraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Listar atletas</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h2>Listagem de atletas</h2>
+    <div class="row">
+        <div class="col-6">
+            <table class="table">
+                <tr>
+                    <th>Codigo</th>
+                    <th>Nome</th>
+                    <th>Data Nascimento</th>
+                    <th>Modalidade</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tbody>
+                <tr th:each="atleta:${atletas}">
+                    <td th:text="${atleta.codigo}"></td>
+                    <td th:text="${atleta.nome}"></td>
+                    <td th:text="${#temporals.format(atleta.dataNascimento, 'dd/MM/yyyy')}"></td>
+                    <td th:text="${atleta.modalidade.nome}"></td>
+                    <td>
+                        <a th:href="@{/atletas/editar/}+${atleta.codigo}" class="btn btn-outline-info btn-sm">Editar</a>
+                    </td>
+                    <td>
+                        <a class="btn btn-outline-danger btn-sm" href="#" th:onclick="|atletaId.value = ${atleta.codigo}|" data-toggle="modal" data-target="#exampleModal">excluir</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="exampleModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Remover</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Certeza que deseja remover esse item?</p>
+                </div>
+                <div class="modal-footer">
+                    <input type="button" class="btn btn-secondary" data-dismiss="modal" value="Cancelar">
+                    <form th:action="@{/atletas/excluir}" th:object="${atleta}" method="post">
+                        <input type="hidden" name="codigo" id="atletaId">
+                        <button type="submit" class="btn btn-primary">Sim</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
