@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">persistenciasqlite</string>
+    <string name="nome">Nome</string>
+    <string name="e_mail">E-mail</string>
+    <string name="salvar">Salvar</string>
+    <string name="dados_incorretos">Informe corretamente os dados</string>
+    <string name="usuario_salvo">Usuário salvo com sucesso!</string>
+    <string name="excluir">Excluir</string>
+    <string name="usuario_excluido">Usuario excluido</string>
+</resources>
