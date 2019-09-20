@@ -13,5 +13,10 @@ namespace _06_Fiap.Web.AspNet.Models
         public decimal Limite { get; set; }
         public Boolean Internacional { get; set; }
         public Bandeira Bandeira { get; set; }
+
+        //Relacionamento
+        public Banco Banco { get; set; }
+        public int BancoId { get; set; }
+        public Cliente Cliente { get; set; }
     }
 }

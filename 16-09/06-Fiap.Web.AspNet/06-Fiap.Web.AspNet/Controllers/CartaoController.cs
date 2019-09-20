@@ -1,6 +1,7 @@
 ﻿using _06_Fiap.Web.AspNet.Contexts;
 using _06_Fiap.Web.AspNet.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -27,6 +28,8 @@ namespace _06_Fiap.Web.AspNet.Controllers
         [HttpGet]
         public IActionResult Cadastrar()
         {
+            // todo
+            ViewBag.bancos = new SelectList(bancos, "BancoId", "Nome");
             return View();
         }
 
