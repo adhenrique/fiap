@@ -33,7 +33,8 @@
                     @Html.DisplayFor(modelItem => item.Agencia)
                 </td>
                 <td>
-                    <a class="btn btn-primary btn-sm" asp-area="" asp-controller="Cartao" asp-action="Editar" asp-route-id="@item.BancoId">Editar</a> |
+                    <a class="btn btn-primary btn-sm" asp-area="" asp-controller="Banco" asp-action="Editar" asp-route-id="@item.BancoId">Editar</a> |
+                    <a class="btn btn-primary btn-sm" asp-area="" asp-controller="Cartao" asp-action="Index" asp-route-bancoBusca="@item.BancoId">Cartões</a> |
                     <button type="button" onclick="codigo.value = @item.BancoId" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#modalExemplo">
                         Excluir
                     </button>

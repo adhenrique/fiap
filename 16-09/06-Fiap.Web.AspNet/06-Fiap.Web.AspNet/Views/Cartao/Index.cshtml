@@ -3,18 +3,29 @@
 @{
     ViewData["Title"] = "Listar";
 }
-
+<form class="form-inline">
+    <select class="form-control" name="bancoBusca" asp-items="@ViewBag.bancos">
+        <option>Selecione</option>
+    </select>
+    <button type="submit" class="btn btn-primary">Pesquisar</button>
+</form>
 <table class="table">
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.Cliente.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Banco.Nome)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Nome)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.DataValidade)
+                @Html.DisplayNameFor(model => model.Limite)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Limite)
+                @Html.DisplayNameFor(model => model.DataValidade)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Internacional)
@@ -30,13 +41,19 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Nome)
+                    Cliente
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.DataValidade)
+                    Banco
+                </td>
+                <td>
+                    Cartão
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Limite)
+                </td>
+                <td>
+                    Validade
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Internacional)

@@ -35,4 +35,3 @@ D:\fiap\16-09\06-Fiap.Web.AspNet\06-Fiap.Web.AspNet\obj\Debug\netcoreapp2.2\Razo
 D:\fiap\16-09\06-Fiap.Web.AspNet\06-Fiap.Web.AspNet\obj\Debug\netcoreapp2.2\Razor\Views\Banco\Index.g.cshtml.cs
 D:\fiap\16-09\06-Fiap.Web.AspNet\06-Fiap.Web.AspNet\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\Index.g.cshtml.cs
 D:\fiap\16-09\06-Fiap.Web.AspNet\06-Fiap.Web.AspNet\obj\Debug\netcoreapp2.2\Razor\Views\Cliente\Cadastrar.g.cshtml.cs
-D:\fiap\16-09\06-Fiap.Web.AspNet\06-Fiap.Web.AspNet\obj\Debug\netcoreapp2.2\Razor\Views\Cartao\NovoCadastrar.g.cshtml.cs

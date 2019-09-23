@@ -20,7 +20,7 @@ namespace _06_Fiap.Web.AspNet.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            return View(_context.Cartoes.ToList());
+            return View(_context.Bancos.ToList());
         }
 
         [HttpGet]

@@ -20,23 +20,37 @@ namespace _06_Fiap.Web.AspNet.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Index(int bancoBusca)
         {
-            return View(_context.Cartoes.ToList());
+            var lista = _context.Cartoes
+                .Include(c => c.Banco)
+                .Include(c => c.Cliente)
+                .Where(w => w.BancoId == bancoBusca || bancoBusca == 0)
+                .ToList();
+            CarregarComboBancos();
+            return View(lista);
         }
 
         [HttpGet]
         public IActionResult Cadastrar()
         {
-            // todo
-            ViewBag.bancos = new SelectList(bancos, "BancoId", "Nome");
+            CarregarComboBancos();
             return View();
+        }
+
+        private void CarregarComboBancos()
+        {
+            var bancos = _context.Bancos.ToList();
+            ViewBag.bancos = new SelectList(bancos, "BancoId", "Nome");
         }
 
         [HttpGet]
         public IActionResult Editar(int id)
         {
-            var cartao = _context.Cartoes.Find(id);
+            var cartao = _context.Cartoes
+                .Include(c => c.Cliente)
+                .Where(w => w.CartaoId == id)
+                .FirstOrDefault();
             return View(cartao);
         }
 
