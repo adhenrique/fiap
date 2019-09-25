@@ -24,12 +24,14 @@ public class AtletaController {
 
     @GetMapping("listar")
     public String listar(Model model) {
+        model.addAttribute("searchAction", "atletas");
         model.addAttribute("atletas", rep.findAll());
         return "atletas/listar";
     }
 
     @GetMapping("criar")
     public String criar(Atleta atleta, Model model) {
+        model.addAttribute("searchAction", "atletas");
         model.addAttribute("modalidades", modalidadeRepository.findAll());
         return "atletas/form";
     }
@@ -61,5 +63,14 @@ public class AtletaController {
         rep.deleteById(codigo);
         redirectAttributes.addAttribute("msg", "Atleta removido");
         return "redirect:/atletas/listar";
+    }
+
+    // pesquisar
+    @GetMapping("pesquisar")
+    public String pesquisar(String nomeBusca, Model model) {
+        model.addAttribute("atletas", rep.findByNomeContainsIgnoreCase(nomeBusca));
+        model.addAttribute("nomeBusca", nomeBusca);
+        model.addAttribute("searchAction", "atletas");
+        return "atletas/listar";
     }
 }

@@ -20,12 +20,14 @@ public class ModalidadeController {
 
     @GetMapping("listar")
     public String listar(Model model) {
+        model.addAttribute("searchAction", "modalidades");
         model.addAttribute("modalidades", rep.findAll());
         return "modalidades/listar";
     }
 
     @GetMapping("criar")
-    public String criar(Modalidade modalidade) {
+    public String criar(Modalidade modalidade, Model model) {
+        model.addAttribute("searchAction", "modalidades");
         return "modalidades/form";
     }
 
@@ -55,5 +57,22 @@ public class ModalidadeController {
         rep.deleteById(codigo);
         redirectAttributes.addAttribute("msg", "Modalidade removida");
         return "redirect:/modalidades/listar";
+    }
+
+    // pesquisar
+    @GetMapping("pesquisar")
+    public String pesquisar(String nomeBusca, Model model) {
+        model.addAttribute("modalidades", rep.findByNomeContainsIgnoreCase(nomeBusca));
+        model.addAttribute("nomeBusca", nomeBusca);
+        model.addAttribute("searchAction", "atletas");
+        return "modalidades/listar";
+    }
+
+    // pesquisar
+    @GetMapping("detalhes/{id}")
+    public String detalhes(@PathVariable("id") int codigo, Model model) {
+        model.addAttribute("modalidade", rep.findById(codigo).get());
+        model.addAttribute("searchAction", "modalidades");
+        return "modalidades/detalhes";
     }
 }

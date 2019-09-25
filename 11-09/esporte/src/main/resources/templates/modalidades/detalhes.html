@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ulraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalhes da Modalidade</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h2>Detalhes da Modalidade</h2>
+    <div class="row">
+        <div class="col-3">Modalidade</div>
+        <div class="col-3" th:text="${modalidade.nome}"></div>
+    </div>
+    <div class="row">
+        <div class="col-3">É individual ou coletivo?</div>
+        <div class="col-3" th:text="${modalidade.individual ? 'Individual' : 'Coletivo'}"></div>
+    </div>
+    <div class="row">
+        <div class="col-3">Data</div>
+        <div class="col-3" th:text="${#temporals.format(modalidade.data, 'dd/MM/yyyy')}"></div>
+    </div>
+    <div class="row">
+        <div class="col-3">Qtd Atletas</div>
+        <div class="col-3" th:text="${modalidade.atletas.size()}"></div>
+    </div>
+    <div class="row">
+        <div class="card bg-light mb-3" style="max-width: 18rem;" th:each="atleta:${modalidade.atletas}">
+            <div class="card-header" th:text="${'Nome: ' + atleta.nome}"></div>
+            <div class="card-body">
+                <p class="card-text" th:text="${'Data de nascimento: ' + #temporals.format(atleta.dataNascimento, 'dd/MM/yyyy')}"></p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
