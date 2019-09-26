@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.util.Optional;
+
 @Controller
 @RequestMapping("atletas")
 public class AtletaController {
@@ -26,6 +28,7 @@ public class AtletaController {
     public String listar(Model model) {
         model.addAttribute("searchAction", "atletas");
         model.addAttribute("atletas", rep.findAll());
+        model.addAttribute("modalidades", modalidadeRepository.findAll());
         return "atletas/listar";
     }
 
@@ -66,10 +69,20 @@ public class AtletaController {
     }
 
     // pesquisar
-    @GetMapping("pesquisar")
+    @GetMapping("pesquisar/nome")
     public String pesquisar(String nomeBusca, Model model) {
         model.addAttribute("atletas", rep.findByNomeContainsIgnoreCase(nomeBusca));
         model.addAttribute("nomeBusca", nomeBusca);
+        model.addAttribute("searchAction", "atletas");
+        return "atletas/listar";
+    }
+
+    // pesquisar
+    @GetMapping("pesquisar/modalidade")
+    public String pesquisarPorModalidade(int codigoModalidade, Model model) {
+        model.addAttribute("atletas", rep.findByModalidade_Codigo(codigoModalidade));
+        model.addAttribute("modalidades", modalidadeRepository.findAll());
+        model.addAttribute("codigoModalidade", codigoModalidade);
         model.addAttribute("searchAction", "atletas");
         return "atletas/listar";
     }

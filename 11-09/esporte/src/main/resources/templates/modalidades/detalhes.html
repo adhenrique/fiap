@@ -26,7 +26,7 @@
         <div class="col-3" th:text="${modalidade.atletas.size()}"></div>
     </div>
     <div class="row">
-        <div class="card bg-light mb-3" style="max-width: 18rem;" th:each="atleta:${modalidade.atletas}">
+        <div class="card col-4 bg-light mb-3" style="max-width: 18rem;" th:each="atleta:${modalidade.atletas}">
             <div class="card-header" th:text="${'Nome: ' + atleta.nome}"></div>
             <div class="card-body">
                 <p class="card-text" th:text="${'Data de nascimento: ' + #temporals.format(atleta.dataNascimento, 'dd/MM/yyyy')}"></p>

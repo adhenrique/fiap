@@ -10,10 +10,17 @@
 <div layout:fragment="content">
     <h2>Listagem de atletas</h2>
     <div class="row mt-3 mb-3">
-        <div class="col-3">
-            <select id="modalidade" class="form-control" required>
-                <option value="">Filtrar por modalidade...</option>
-            </select>
+        <div class="col-6">
+            <form class="form-inline" th:action="@{/atletas/pesquisar/modalidade}">
+                <div class="form-group mx-sm-3 mb-2">
+                    <select class="form-control" required name="codigoModalidade">
+                        <option value="">Selecione...</option>
+                        <option th:selected="${modalidade.codigo == codigoModalidade}" th:each="modalidade:${modalidades}" th:value="${modalidade.codigo}" th:text="${modalidade.nome}"></option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-outline-primary mb-2">Filtrar</button>
+                <a th:href="@{/atletas/listar}" class="btn btn-outline-info mb-2 ml-2" th:if="${codigoModalidade}">Limpar</a>
+            </form>
         </div>
     </div>
     <div class="row">
@@ -24,6 +31,7 @@
                     <th>Nome</th>
                     <th>Data Nascimento</th>
                     <th>Modalidade</th>
+                    <th>Lesionado ?</th>
                     <th></th>
                     <th></th>
                 </tr>
@@ -33,6 +41,9 @@
                     <td th:text="${atleta.nome}"></td>
                     <td th:text="${#temporals.format(atleta.dataNascimento, 'dd/MM/yyyy')}"></td>
                     <td th:text="${atleta.modalidade.nome}"></td>
+                    <td>
+                        <input type="checkbox" class="lesionar" th:id="${'lesionar_' + atleta.codigo}" th:checked="${atleta.lesionado}">
+                    </td>
                     <td>
                         <a th:href="@{/atletas/editar/}+${atleta.codigo}" class="btn btn-outline-info btn-sm">Editar</a>
                     </td>

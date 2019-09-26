@@ -21,6 +21,16 @@ public class Atleta {
     @ManyToOne
     private Modalidade modalidade;
 
+    private boolean lesionado;
+
+    public boolean isLesionado() {
+        return lesionado;
+    }
+
+    public void setLesionado(boolean lesionado) {
+        this.lesionado = lesionado;
+    }
+
     public int getCodigo() {
         return codigo;
     }

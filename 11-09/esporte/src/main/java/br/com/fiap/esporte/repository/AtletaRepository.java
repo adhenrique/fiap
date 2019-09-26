@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface AtletaRepository extends JpaRepository<Atleta, Integer> {
     List<Atleta> findByNomeContainsIgnoreCase(String nome);
+    List<Atleta> findByModalidade_Codigo(int codigo);
 }
