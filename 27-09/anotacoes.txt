@@ -1,0 +1,26 @@
+Teste pode ser:
+    dirigido
+        quando defino os dados que eu vou imputar, e ja imagino qual será o output
+    ñ dirigido
+        deixo a escolha dos dados de I/O nas mãos do testador
+
+Teste pode ser construido com 2 objetivos:
+    positivos
+        quando o cadastro funciona, mesmo que grave errado
+        quando o objetivo é concretizado
+    negativos
+        quando há qualquer outro cenário diferente do positivo
+        quando o objetivo não é concretizado
+        ex: digitar qualquer dado errado, e o software trate as exceções
+
+
+preparação/pré condição:
+    o que eu preparei antes
+    ex:
+        garantir que nao exista outro usuario na base
+
+
+casos de teste podem ser iguais a quantidade de cenarios
+
+cada exceção é um teste negativo
+alternativa, é um caso de teste positivo
