@@ -1,0 +1,48 @@
+﻿@model IList<Turma>
+
+@{
+    ViewData["Title"] = "Turmas";
+}
+
+    <div class="row">
+        <div class="col-6 mb-5">
+            <p>
+                <a asp-action="Cadastrar">Criar Novo</a>
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Nome
+                        </th>
+                        <th>
+                            Período
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Nome)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Periodo)
+                            </td>
+                            <td>
+                                <a asp-action="Edit" asp-route-id="@item.TurmaId">Edit</a> |
+                                <a asp-action="Details" asp-route-id="@item.TurmaId">Details</a> |
+                                <a asp-action="Delete" asp-route-id="@item.TurmaId">Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
