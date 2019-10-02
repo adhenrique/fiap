@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de clientes</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Lista de clientes</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form action="" class="form-inline mt-3 mb-3">
+                    <input type="text" name="termoBusca" class="form-control" placeholder="Digite o nome ou cpf">
+                    <button type="submit" class="btn btn-outline-success ml-2">Buscar</button>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <table class="table-hover">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Data de nascimento</th>
+                        <th>CPF</th>
+                    </tr>
+                    <tr th:each="cliente:${clientes}">
+                        <!--fazer-->
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

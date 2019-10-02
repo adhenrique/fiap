@@ -1,0 +1,3 @@
+caso tenhamos erro de layout, verificar decorate, fechar e abrir arquivo, finalizar e reiniciar servidor
+caso tenhamos erro no form, nao esquecer de colocar como propriedades do metodo, o model que estamos utilizando no object do form:
+	public String cadastrar(Cliente cliente, Model model)...
