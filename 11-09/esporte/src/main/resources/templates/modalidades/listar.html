@@ -9,6 +9,7 @@
 <body>
     <div layout:fragment="content">
         <h2>Listagem de Modalidades</h2>
+        <div th:if="${msg}" th:text="${msg}" class="alert alert-success"></div>
         <div class="row">
             <div class="col-6">
                 <table class="table">

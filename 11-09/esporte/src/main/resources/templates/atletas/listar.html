@@ -9,6 +9,7 @@
 <body>
 <div layout:fragment="content">
     <h2>Listagem de atletas</h2>
+    <div th:if="${msg}" th:text="${msg}" class="alert alert-success"></div>
     <div class="row mt-3 mb-3">
         <div class="col-6">
             <form class="form-inline" th:action="@{/atletas/pesquisar/modalidade}">
@@ -76,6 +77,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="snack">
+        Atualizado :)
     </div>
 </div>
 </body>
