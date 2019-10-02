@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5DE2D84F-6C6C-2767-7459-4D5E119C958C" name="DIM_TEMPO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>3F6B1CA1-D988-9733-F194-DCA5E269CD69</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_TEMPO" id="C3BE68FE-FCF4-4B1A-7E7F-E5F5429BB11B">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>3F409851-52BE-F3B4-736D-D87525360F75</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_HORA" id="12DA2C21-A5E1-AD1B-CDF9-EA1CC0DBF048">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>E659C535-6301-F216-BADF-8418D438443B</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_DIA" id="2725EC2F-734A-527D-A45C-3794AB156796">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>EE0D8040-D734-AD91-411E-76A9E6DB7C88</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_MES" id="AD399A1C-6758-0AB5-FE05-DBEC4F54914E">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>A4044479-13BB-E226-8003-EF6A78C6A238</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_FERIADO" id="E8892FF4-3FCB-F2F8-7814-3BE2EB487940">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>C0AB8021-ED21-25A4-5CC2-D13FDABFF696</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="107476ED-DFDD-471F-EAE1-FDCB02FBC1D4" name="DIM_TEMPO_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>9B9D40A8-033C-F96C-994B-C6901211713D</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3BE68FE-FCF4-4B1A-7E7F-E5F5429BB11B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

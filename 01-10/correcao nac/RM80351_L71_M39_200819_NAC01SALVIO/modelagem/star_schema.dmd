@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="star_schema" id="D4F69B36-6E8A-FA11-4CCE-B583DECA276D" version="3.5">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:43:57 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>D4F69B36-6E8A-FA11-4CCE-B583DECA276D</designId>
+</OSDM_Design>

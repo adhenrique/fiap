@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3F6B1CA1-D988-9733-F194-DCA5E269CD69" name="DIM_TEMPO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:45:02 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<engineerTo>
+<item key="8E69523E-0C07-9BBF-D104-ACDA3C7BDB0C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SK_TEMPO" id="3F409851-52BE-F3B4-736D-D87525360F75">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:45:15 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<engineerTo>
+<item key="8E69523E-0C07-9BBF-D104-ACDA3C7BDB0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_HORA" id="E659C535-6301-F216-BADF-8418D438443B">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:45:41 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<engineerTo>
+<item key="8E69523E-0C07-9BBF-D104-ACDA3C7BDB0C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_DIA" id="EE0D8040-D734-AD91-411E-76A9E6DB7C88">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:45:42 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<engineerTo>
+<item key="8E69523E-0C07-9BBF-D104-ACDA3C7BDB0C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_MES" id="A4044479-13BB-E226-8003-EF6A78C6A238">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:45:42 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<engineerTo>
+<item key="8E69523E-0C07-9BBF-D104-ACDA3C7BDB0C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_FERIADO" id="C0AB8021-ED21-25A4-5CC2-D13FDABFF696">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:45:42 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<engineerTo>
+<item key="8E69523E-0C07-9BBF-D104-ACDA3C7BDB0C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9B9D40A8-033C-F96C-994B-C6901211713D" name="DIM_TEMPO PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:45:40 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<engineerTo>
+<item key="8E69523E-0C07-9BBF-D104-ACDA3C7BDB0C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3F409851-52BE-F3B4-736D-D87525360F75</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

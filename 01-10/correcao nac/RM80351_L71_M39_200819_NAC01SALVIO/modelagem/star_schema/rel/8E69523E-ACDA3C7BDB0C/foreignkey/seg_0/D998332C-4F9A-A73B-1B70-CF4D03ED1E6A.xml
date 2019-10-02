@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D998332C-4F9A-A73B-1B70-CF4D03ED1E6A" containerWithKeyObject="B0819059-B6FE-070C-409F-CE2669124063" localFKIndex="1C60955D-73B7-34DC-7D64-49049DC14E0D" name="FK_PENALIDADE_FTO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:56:32 UTC</createdTime>
+<generatorID>E6D9F392-492B-4235-6421-47E5BE927DBF</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<referredTableLongName>DIM_PENALIDADE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>44ECD03B-FEB5-B781-89E1-D62B3FE66106</referredTableID>
+<keyObject>A3C5C296-BDC0-B790-495B-B6EBD3ADF968</keyObject>
+<referredKeyID>A3C5C296-BDC0-B790-495B-B6EBD3ADF968</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_PENALIDADE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,6 @@
+Nome Cliente;CPF;Sexo;Estado Civil;Escolaridade;Regiao;Sigla Estado;Estado;Cidade;Bairro
+Gustavo Silva       ;013298765432;Masculino ;Feminino  ; Superior Compl;Sul       ;SC;Santa Catarina      ;Florianopolis       ;Armação             
+Adriana Lopes       ;011208754123;Feminino  ;Masculino ; Doutorado     ;Nordeste  ;PE;Pernambuco          ;Recife              ;Boa Viagem          
+Maria Linda Santos  ;012056376144;Feminino  ;Divorciado; 2o Grau       ;Norte     ;PA;Pará                ;Belém               ;Umarizal            
+Silvio Santos       ;010078903233;Masculino ;Feminino  ; Ensino Médio  ;Sudeste   ;SP;São Paulo           ;São Paulo           ;Cambuci             
+Dolores Julio       ;011032274498;Feminino  ;Divorciado; Ensino Médio  ;Centro Oes;MT;Mato Grosso         ;Cuiabá              ;Morada da Serra     

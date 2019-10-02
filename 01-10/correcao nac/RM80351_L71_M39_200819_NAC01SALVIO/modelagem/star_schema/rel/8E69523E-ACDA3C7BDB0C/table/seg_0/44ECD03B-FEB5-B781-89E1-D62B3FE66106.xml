@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="44ECD03B-FEB5-B781-89E1-D62B3FE66106" name="DIM_PENALIDADE">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>CB78F508-4672-42E7-3772-295059293933</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_PENALIDADE" id="B0326A2A-6709-8D67-7733-51A612B2CD20">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>4A65FEE2-D45F-25DA-E5AE-23F71111D68E</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_TIPO" id="579E3079-A7DD-03F2-D7C1-36896A7A1E5B">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>49B226FD-6AE2-DF65-679F-CBBB030EAEA2</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_VELOC_PERMITIDA" id="AAE97891-6D46-16F5-8CFA-6E4594296D2C">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>74718A4B-1932-C65E-CD81-AE79B7F1B229</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A3C5C296-BDC0-B790-495B-B6EBD3ADF968" name="DIM_PENALIDADE_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>E6D9F392-492B-4235-6421-47E5BE927DBF</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0326A2A-6709-8D67-7733-51A612B2CD20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

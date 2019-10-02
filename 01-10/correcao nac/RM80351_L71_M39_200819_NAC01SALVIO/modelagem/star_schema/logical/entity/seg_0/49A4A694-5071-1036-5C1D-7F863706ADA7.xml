@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="49A4A694-5071-1036-5C1D-7F863706ADA7" name="FTO_OCORRENCIAS">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:51:31 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<engineerTo>
+<item key="8E69523E-0C07-9BBF-D104-ACDA3C7BDB0C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="VL_PENALIDADE" id="CB053FFB-14B0-5E2C-2289-08CBB083504B">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:51:47 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<engineerTo>
+<item key="8E69523E-0C07-9BBF-D104-ACDA3C7BDB0C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL_TOTAL_PENALIDADE" id="BBA316D3-282A-12A4-2B12-123637C16AD9">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:51:47 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<engineerTo>
+<item key="8E69523E-0C07-9BBF-D104-ACDA3C7BDB0C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL_VOLUME_VEICULOS" id="B7BCF61D-2C50-DC88-BCDE-C4303938D49A">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:51:47 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<engineerTo>
+<item key="8E69523E-0C07-9BBF-D104-ACDA3C7BDB0C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_PERC_PENALIDADES" id="9EAB374E-CA2E-D6D5-2C21-D1550BBB0AC2">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:51:48 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<engineerTo>
+<item key="8E69523E-0C07-9BBF-D104-ACDA3C7BDB0C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SK_OCORRENCIA" id="CD2681AA-4E5A-B76A-4438-D9735E291168">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:54:42 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<engineerTo>
+<item key="8E69523E-0C07-9BBF-D104-ACDA3C7BDB0C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

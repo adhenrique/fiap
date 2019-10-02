@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9A6F927B-8D0D-5CDC-758B-7ACFD2F96D71" name="DIM_REGIAO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>74EA62D1-8197-FB98-6DE9-68670C2BF5B5</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_REGIAO" id="D6C66A76-0A4F-5060-CD2E-1008BD9CEC8F">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>A71C405D-DCC3-1247-7FB4-3418064594DA</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_QUADRANTE" id="33111C50-9D51-596C-CD07-05D0A37835D7">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>E9C04E25-E9C6-C0F7-2A32-20B79DC78113</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_REGIAO" id="EFC9D8D2-318C-DBE2-90FA-585EABB8C3D6">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>FB9A0986-9CCD-E24D-609C-835C8420B5B3</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4DB4C7B1-6C2F-D87F-1E11-DD1C389F6546" name="DIM_REGIAO_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>0408A55E-A1DA-A7B1-BE53-94C0E9118DA8</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6C66A76-0A4F-5060-CD2E-1008BD9CEC8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,6 @@
+NomeCliCadastro; CPF_Cli_Cadastro; Sexo_Cli_Cadastro; Estado_Civil_Cli_Cadastro; Escolaridade_Cli_Cadastro; Data_Cli_Cadastro
+Gustavo Silva; 13298765432; 1; 2; Superior Completo; 18/01/2016
+Adriana Lopes; 11208754123; 2; 1; Doutorado; 15/03/2016
+Maria Linda Santos; 12056376144; 2; 3; 2o Grau; 31/08/2016
+Silvio Santos; 10078903233; 1; 2; Ensino Médio; 19/09/2016
+Dolores Julio; 11032274498; 2; 3; Ensino Médio; 13/03/2016

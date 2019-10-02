@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="19611607-6DB7-0A33-7826-3998C62782D6" name="DIM_VEICULO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="578ADBFD-A994-8EF1-2F56-A2E6BF05492F" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="3F6B1CA1-D988-9733-F194-DCA5E269CD69" name="DIM_TEMPO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="578ADBFD-A994-8EF1-2F56-A2E6BF05492F" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="49A4A694-5071-1036-5C1D-7F863706ADA7" name="FTO_OCORRENCIAS" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="578ADBFD-A994-8EF1-2F56-A2E6BF05492F" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="74EA62D1-8197-FB98-6DE9-68670C2BF5B5" name="DIM_REGIAO" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="578ADBFD-A994-8EF1-2F56-A2E6BF05492F" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="CB78F508-4672-42E7-3772-295059293933" name="DIM_PENALIDADE" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="578ADBFD-A994-8EF1-2F56-A2E6BF05492F" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

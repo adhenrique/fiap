@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DFB39EE9-B164-66CE-85A8-0670A08985D9" name="DIM_VEICULO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>19611607-6DB7-0A33-7826-3998C62782D6</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<typeID>2</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_VEICULO" id="7064BD27-E9AA-8613-8A30-8B7CDA782ADD">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>6FBA8459-AD9E-04B4-1584-53F058B5155A</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_PLACA" id="3DE6743A-2191-253A-4719-55583BEA0C12">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>AB1DF34D-57EE-08CF-C0A7-126EF7FA47E7</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_TIPO" id="5F29D86E-5F8B-651B-8149-CCED0231FB8C">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>90247287-7EB6-4201-D14A-9DB91AA86707</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_VELOC_MEDIA" id="952F42B1-9D2F-0AD2-9B47-8BA80E6927B4">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>5BBAF086-9ECF-F023-1CFB-244E8C6D19AF</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6AAAE243-B0F1-A7C0-D302-4F739ABDE027" name="DIM_VEICULO_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>3169F6C8-87B6-E214-D6EC-577F88BB3AA6</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7064BD27-E9AA-8613-8A30-8B7CDA782ADD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

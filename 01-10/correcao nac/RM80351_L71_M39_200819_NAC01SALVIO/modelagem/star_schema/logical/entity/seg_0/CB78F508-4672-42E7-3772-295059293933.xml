@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="CB78F508-4672-42E7-3772-295059293933" name="DIM_PENALIDADE">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:48:40 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<engineerTo>
+<item key="8E69523E-0C07-9BBF-D104-ACDA3C7BDB0C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="SK_PENALIDADE" id="4A65FEE2-D45F-25DA-E5AE-23F71111D68E">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:48:47 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<engineerTo>
+<item key="8E69523E-0C07-9BBF-D104-ACDA3C7BDB0C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_TIPO" id="49B226FD-6AE2-DF65-679F-CBBB030EAEA2">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:48:47 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<engineerTo>
+<item key="8E69523E-0C07-9BBF-D104-ACDA3C7BDB0C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_VELOC_PERMITIDA" id="74718A4B-1932-C65E-CD81-AE79B7F1B229">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:48:47 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<engineerTo>
+<item key="8E69523E-0C07-9BBF-D104-ACDA3C7BDB0C" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E6D9F392-492B-4235-6421-47E5BE927DBF" name="DIM_PENALIDADE PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:48:55 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<engineerTo>
+<item key="8E69523E-0C07-9BBF-D104-ACDA3C7BDB0C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4A65FEE2-D45F-25DA-E5AE-23F71111D68E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

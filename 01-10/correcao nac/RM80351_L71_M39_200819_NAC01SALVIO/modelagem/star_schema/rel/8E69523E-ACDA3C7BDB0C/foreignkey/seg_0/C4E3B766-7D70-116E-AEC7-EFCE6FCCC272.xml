@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C4E3B766-7D70-116E-AEC7-EFCE6FCCC272" containerWithKeyObject="B0819059-B6FE-070C-409F-CE2669124063" localFKIndex="BA9B9295-ECAA-23EE-5D15-350DDE3F4BB6" name="FK_REGIAO_FTO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:57:18 UTC</createdTime>
+<generatorID>0408A55E-A1DA-A7B1-BE53-94C0E9118DA8</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<referredTableLongName>DIM_REGIAO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9A6F927B-8D0D-5CDC-758B-7ACFD2F96D71</referredTableID>
+<keyObject>4DB4C7B1-6C2F-D87F-1E11-DD1C389F6546</keyObject>
+<referredKeyID>4DB4C7B1-6C2F-D87F-1E11-DD1C389F6546</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>SK_REGIAO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

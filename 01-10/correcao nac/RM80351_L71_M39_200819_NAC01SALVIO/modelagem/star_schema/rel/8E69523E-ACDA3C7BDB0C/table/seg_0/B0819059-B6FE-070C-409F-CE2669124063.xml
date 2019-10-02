@@ -1,0 +1,189 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B0819059-B6FE-070C-409F-CE2669124063" name="FTO_OCORRENCIAS">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>49A4A694-5071-1036-5C1D-7F863706ADA7</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<typeID>1</typeID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SK_OCORRENCIA" id="3B2B5193-B978-6AE6-4507-69F13214DC19">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>CD2681AA-4E5A-B76A-4438-D9735E291168</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SK_PENALIDADE" id="5164D5F4-709F-0098-CE30-ECEFB8FF8DA6">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:56:32 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D998332C-4F9A-A73B-1B70-CF4D03ED1E6A" referredColumn="B0326A2A-6709-8D67-7733-51A612B2CD20"/>
+</associations>
+</Column>
+<Column name="SK_TEMPO" id="5F080F21-CE26-85E0-6D78-6121C8D0B878">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:56:56 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1ECEBED5-52F2-29B3-DB40-05386B86DBBA" referredColumn="C3BE68FE-FCF4-4B1A-7E7F-E5F5429BB11B"/>
+</associations>
+</Column>
+<Column name="SK_REGIAO" id="4DE0D24B-67D5-DCFA-F530-104FE08AF401">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:57:18 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C4E3B766-7D70-116E-AEC7-EFCE6FCCC272" referredColumn="D6C66A76-0A4F-5060-CD2E-1008BD9CEC8F"/>
+</associations>
+</Column>
+<Column name="SK_VEICULO" id="61FF344A-58E3-55BE-FC33-CEEC2A1460BE">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:57:27 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2C26AF13-AA35-56DC-6C81-193D05F802BE" referredColumn="7064BD27-E9AA-8613-8A30-8B7CDA782ADD"/>
+</associations>
+</Column>
+<Column name="VL_PENALIDADE" id="1B0B1F1F-A4A6-E30F-0BC9-3D54F9D3D989">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>CB053FFB-14B0-5E2C-2289-08CBB083504B</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_TOTAL_PENALIDADE" id="40C837A1-FBF5-5654-C1B5-EEFD6AD24525">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>BBA316D3-282A-12A4-2B12-123637C16AD9</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_VOLUME_VEICULOS" id="7BA4547D-DB0A-4811-8574-FC34D22E3E76">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>B7BCF61D-2C50-DC88-BCDE-C4303938D49A</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_PERC_PENALIDADES" id="3EC19E43-8F24-06EE-39AA-7B88BD245A2B">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:17 UTC</createdTime>
+<generatorID>9EAB374E-CA2E-D6D5-2C21-D1550BBB0AC2</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8C95B459-344D-BC2B-DC1C-B6E38C606514" name="FTO_OCORRENCIAS_PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:55:42 UTC</createdTime>
+<ownerDesignName>star_schema</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B2B5193-B978-6AE6-4507-69F13214DC19"/>
+<colUsage columnID="5164D5F4-709F-0098-CE30-ECEFB8FF8DA6"/>
+<colUsage columnID="5F080F21-CE26-85E0-6D78-6121C8D0B878"/>
+<colUsage columnID="4DE0D24B-67D5-DCFA-F530-104FE08AF401"/>
+<colUsage columnID="61FF344A-58E3-55BE-FC33-CEEC2A1460BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1C60955D-73B7-34DC-7D64-49049DC14E0D" name="FK_PENALIDADE_FTO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:56:32 UTC</createdTime>
+<generatorID>E6D9F392-492B-4235-6421-47E5BE927DBF</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5164D5F4-709F-0098-CE30-ECEFB8FF8DA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F9711D8B-15C6-C1E1-02B2-0F771264FCB9" name="FK_TEMPO_FTO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:56:56 UTC</createdTime>
+<generatorID>9B9D40A8-033C-F96C-994B-C6901211713D</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5F080F21-CE26-85E0-6D78-6121C8D0B878"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA9B9295-ECAA-23EE-5D15-350DDE3F4BB6" name="FK_REGIAO_FTO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:57:18 UTC</createdTime>
+<generatorID>0408A55E-A1DA-A7B1-BE53-94C0E9118DA8</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DE0D24B-67D5-DCFA-F530-104FE08AF401"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C21F98F-2026-2B5B-A76E-D3C0F665AED9" name="FK_VEICULO_FTO">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2019-09-24 22:57:27 UTC</createdTime>
+<generatorID>3169F6C8-87B6-E214-D6EC-577F88BB3AA6</generatorID>
+<ownerDesignName>star_schema</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61FF344A-58E3-55BE-FC33-CEEC2A1460BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

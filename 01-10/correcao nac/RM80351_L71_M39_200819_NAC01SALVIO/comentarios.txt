@@ -1,0 +1,25 @@
+
+Nota final: 8,0
+-------------------------
+
+Bus Matrix
+-------------------------
+Existem métricas definidas que não estão associadas a uma Dimensão.
+Senti falta de algumas métricas importantes. Veja o gabarito fornecido.
+Senti falta de alguns atributos importantes nas Dimensões. Veja o gabarito fornecido.
+
+
+Arquivo DMD:
+-------------------------
+Sentimos falta de alguns atributos importantes em seu modelo dimensional. Veja o gabarito fornecido.
+Velocidade aferida deveria ser uma métrica e não um atributo de Dimensão.
+Senti falta do Quadrante.
+O grão da dimensão tempo deveria ser minuto.
+
+Arquivo PDF
+-------------------------
+O arquivo *.pdf não foi enviado.
+
+cria.sql e apaga.sql
+-------------------------
+Ok
