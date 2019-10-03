@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastrar pedido</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-6">
+                <h2>Cliente</h2>
+                <table class="table table-striped">
+                    <tr>
+                        <th>Cliente</th>
+                        <th>CPF</th>
+                        <th>E-mail</th>
+                    </tr>
+                    <tr>
+                       <td th:text="${cliente.nome}"></td>
+                       <td th:text="${cliente.cpf}"></td>
+                       <td th:text="${cliente.email}"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <form th:action="@{/pedido/salvar}" th:object="${pedido}" method="post">
+                    <input type="hidden" th:field="*{cliente.codigo}">
+                    <div class="form-group">
+                        <label for="dataPedido">Data do pedido</label>
+                        <input type="text" id="dataPedido" th:field="*{dataPedido}" class="form-control" placeholder="Digite a data do pedido">
+                        <p th:errors="*{dataPedido}" class="text-danger small"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="produto">Produto</label>
+                        <input type="text" id="produto" th:field="*{produto}" class="form-control" placeholder="Digite o produto">
+                        <p th:errors="*{produto}" class="text-danger small"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="valor">Valor</label>
+                        <input type="text" id="valor" th:field="*{valor}" class="form-control" placeholder="Digite o valor">
+                        <p th:errors="*{valor}" class="text-danger small"></p>
+                    </div>
+                    <button type="submit" class="btn btn-outline-info">Salvar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

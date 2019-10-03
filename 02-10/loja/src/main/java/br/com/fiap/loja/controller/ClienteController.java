@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @Controller
 @RequestMapping("/cliente")
@@ -22,6 +23,14 @@ public class ClienteController {
 
     @GetMapping("listar")
     public String listar(Model model) {
+        return "cliente/listar";
+    }
+
+    @GetMapping("buscar")
+    public String buscar(String termoBusca, Model model) {
+        List<Cliente> clientes = repository.findByNomeContainsIgnoreCaseOrCpfContains(termoBusca, termoBusca);
+        model.addAttribute("clientes", clientes);
+        model.addAttribute("termoBusca", termoBusca);
         return "cliente/listar";
     }
 

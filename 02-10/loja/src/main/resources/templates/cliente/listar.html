@@ -17,23 +17,32 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <form action="" class="form-inline mt-3 mb-3">
-                    <input type="text" name="termoBusca" class="form-control" placeholder="Digite o nome ou cpf">
+                <form th:action="@{/cliente/buscar}" class="form-inline mt-3 mb-3">
+                    <input type="text" name="termoBusca" th:value="${termoBusca}" class="form-control" placeholder="Digite o nome ou cpf">
                     <button type="submit" class="btn btn-outline-success ml-2">Buscar</button>
+                    <a th:href="@{/cliente/listar}" class="btn btn-outline-info ml-2" th:if="${termoBusca}">Limpar</a>
                 </form>
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
-                <table class="table-hover">
+            <div class="col-12">
+                <table class="table table-hover">
                     <tr>
                         <th>Nome</th>
                         <th>Email</th>
                         <th>Data de nascimento</th>
                         <th>CPF</th>
+                        <th></th>
                     </tr>
                     <tr th:each="cliente:${clientes}">
-                        <!--fazer-->
+                        <td th:text="${cliente.nome}"></td>
+                        <td th:text="${cliente.email}"></td>
+                        <td th:text="${#temporals.format(cliente.dataNascimento, 'dd/MM/yyyy')}"></td>
+                        <td th:text="${cliente.cpf}"></td>
+                        <td>
+                            <a class="btn btn-outline-success btn-sm" th:href="@{/pedido/cadastrar/}+${cliente.codigo}">Fazer pedido</a>
+                            <a class="btn btn-outline-info btn-sm" th:href="@{/pedido/listar/}+${cliente.codigo}">Pedidos</a>
+                        </td>
                     </tr>
                 </table>
             </div>
