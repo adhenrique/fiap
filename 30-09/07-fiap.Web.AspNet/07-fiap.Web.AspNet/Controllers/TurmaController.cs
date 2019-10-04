@@ -34,7 +34,13 @@ namespace _07_fiap.Web.AspNet.Controllers
             _repository.Cadastrar(turma);
             _repository.Salvar();
             TempData["msg"] = "Cadastrado com sucesso";
-            return View("Listar");
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult Editar(int id)
+        {
+            var turma = _repository.BuscarPorId(id);
+            return View(turma);
         }
     }
 }

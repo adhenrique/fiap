@@ -24,7 +24,7 @@ using _07_fiap.Web.AspNet.Models;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"788358e3f7765c01330f3f83ab8218da5992324e", @"/Views/Turma/Cadastrar.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"567905c828b9ceadd55613b2b1ec27f34d144c37", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4bc6bffad858c81ae63150b5b0b9ebbeca5d4c6c", @"/Views/_ViewImports.cshtml")]
     public class Views_Turma_Cadastrar : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<_07_fiap.Web.AspNet.Models.Turma>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("text-danger"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);

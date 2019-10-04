@@ -28,6 +28,7 @@ namespace _07_fiap.Web.AspNet
         {
             //Configurar a injeção de dependencia dos repositories
             services.AddScoped<ITurmaRepository, TurmaRepository>();
+            services.AddScoped<IAlunoRepository, AlunoRepository>();
 
             services.AddDbContext<EscolaContext>(
                 o => o.UseSqlServer(Configuration

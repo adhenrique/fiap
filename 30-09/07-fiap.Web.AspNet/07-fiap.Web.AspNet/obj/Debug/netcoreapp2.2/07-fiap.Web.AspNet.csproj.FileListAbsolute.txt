@@ -29,3 +29,7 @@ D:\fiap\30-09\07-fiap.Web.AspNet\07-fiap.Web.AspNet\obj\Debug\netcoreapp2.2\07-f
 D:\fiap\30-09\07-fiap.Web.AspNet\07-fiap.Web.AspNet\obj\Debug\netcoreapp2.2\07-fiap.Web.AspNet.csproj.CopyComplete
 D:\fiap\30-09\07-fiap.Web.AspNet\07-fiap.Web.AspNet\obj\Debug\netcoreapp2.2\Razor\Views\Turma\Index.g.cshtml.cs
 D:\fiap\30-09\07-fiap.Web.AspNet\07-fiap.Web.AspNet\obj\Debug\netcoreapp2.2\Razor\Views\Turma\Cadastrar.g.cshtml.cs
+D:\fiap\30-09\07-fiap.Web.AspNet\07-fiap.Web.AspNet\obj\Debug\netcoreapp2.2\07-fiap.Web.AspNet.csprojAssemblyReference.cache
+D:\fiap\30-09\07-fiap.Web.AspNet\07-fiap.Web.AspNet\obj\Debug\netcoreapp2.2\Razor\Views\Turma\Editar.g.cshtml.cs
+D:\fiap\30-09\07-fiap.Web.AspNet\07-fiap.Web.AspNet\obj\Debug\netcoreapp2.2\Razor\Views\Aluno\Cadastrar.g.cshtml.cs
+D:\fiap\30-09\07-fiap.Web.AspNet\07-fiap.Web.AspNet\obj\Debug\netcoreapp2.2\Razor\Views\Aluno\Index.g.cshtml.cs

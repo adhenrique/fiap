@@ -31,6 +31,15 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Turmas</a>
+                            <div class="dropdown">
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" asp-controller="Turma" asp-action="Index">Listar</a>
+                                    <a class="dropdown-item" asp-area="" asp-controller="Turma" asp-action="Cadastrar">Cadastrar</a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>

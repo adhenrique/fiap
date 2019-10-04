@@ -4,45 +4,26 @@
     ViewData["Title"] = "Turmas";
 }
 
+<div class="row">
+    <div class="col-6 mb-5">
+        <p>
+            <a asp-action="Cadastrar">Criar Novo</a>
+        </p>
+        <alerta mensagem="@TempData["msg"]" tipo="success"></alerta>
+    </div>
+</div>
+
+@foreach (var item in Model)
+{
     <div class="row">
-        <div class="col-6 mb-5">
-            <p>
-                <a asp-action="Cadastrar">Criar Novo</a>
-            </p>
+        <div class="col-12">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">@Html.DisplayFor(modelItem => item.Nome)</h5>
+                    <p class="card-text">@Html.DisplayFor(modelItem => item.Periodo)</p>
+                    <a asp-action="Editar" asp-route-id="@item.TurmaId" class="btn btn-primary">Visitar</a>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-6">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>
-                            Nome
-                        </th>
-                        <th>
-                            Período
-                        </th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var item in Model)
-                    {
-                        <tr>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Nome)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Periodo)
-                            </td>
-                            <td>
-                                <a asp-action="Edit" asp-route-id="@item.TurmaId">Edit</a> |
-                                <a asp-action="Details" asp-route-id="@item.TurmaId">Details</a> |
-                                <a asp-action="Delete" asp-route-id="@item.TurmaId">Delete</a>
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-        </div>
-    </div>
+}
